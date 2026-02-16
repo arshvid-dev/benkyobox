@@ -1,0 +1,489 @@
+{
+    "okimasu": {
+        "hiragana": "お",
+        "kanji": "起きる",
+        "meaning": "to get up; to rise; to blaze up (fire)",
+        "group": "Ichidan verb, Intransitive verb",
+        "conjugations": {}
+    },
+    "nemasu": {
+        "hiragana": "ね",
+        "kanji": "寝る",
+        "meaning": "to sleep (lying down)",
+        "group": "Ichidan verb, Intransitive verb"
+    },
+    "hatarakimasu": {
+        "hiragana": "はたら",
+        "kanji": "働く",
+        "meaning": "to work; to labor; to labour",
+        "group": "Godan verb with 'ku' ending, Intransitive verb"
+    },
+    "nanyoubi": {
+        "hiragana": "なんようび",
+        "kanji": "何曜日",
+        "meaning": "what day?; what day of the week?",
+        "group": "Noun"
+    },
+    "tabemasu": {
+        "hiragana": "た",
+        "kanji": "食べる",
+        "meaning": "to eat",
+        "group": "Ichidan verb, Transitive verb",
+        "conjugations": {
+            "Verb Class": {
+                "plain": {
+                    "positive": "2 ~ Ichidan ~ 一段",
+                    "negative": ""
+                }
+            },
+            "Stem": {
+                "plain": {
+                    "positive": "tabe - 食べ",
+                    "negative": ""
+                }
+            },
+            "Te form": {
+                "plain": {
+                    "positive": "tabete 食べて",
+                    "negative": ""
+                }
+            },
+            "Infinitive": {
+                "plain": {
+                    "positive": "tabe 食べ",
+                    "negative": ""
+                }
+            },
+            "Present Indicative": {
+                "plain": {
+                    "positive": "taberu 食べる",
+                    "negative": "tabenai 食べない"
+                },
+                "polite": {
+                    "positive": "tabemasu 食べます",
+                    "negative": "tabemasen 食べません"
+                }
+            },
+            "Presumptive \\ Volitional": {
+                "plain": {
+                    "positive": "tabeyō 食べよう taberu darō 食べる だろう",
+                    "negative": "tabenai darō 食べない だろう"
+                },
+                "polite": {
+                    "positive": "tabemashō 食べましょう taberu deshō 食べるでしょう",
+                    "negative": "tabenai deshō 食べないでしょう"
+                }
+            },
+            "Imperative": {
+                "plain": {
+                    "positive": "tabero 食べろ",
+                    "negative": "taberu na 食べるな"
+                },
+                "polite": {
+                    "positive": "tabete kudasai 食べて ください",
+                    "negative": "tabenai de kudasai 食べないで ください"
+                }
+            },
+            "Past Indicative": {
+                "plain": {
+                    "positive": "tabeta 食べた",
+                    "negative": "tabenakatta 食べなかった"
+                },
+                "polite": {
+                    "positive": "tabemashita 食べました",
+                    "negative": "tabemasen deshita 食べませんでした"
+                }
+            },
+            "Past Presumptive": {
+                "plain": {
+                    "positive": "tabetarō 食べたろう tabeta darō 食べただろう",
+                    "negative": "tabenakatta darō 食べなかっただろう"
+                },
+                "polite": {
+                    "positive": "tabeta deshō 食べたでしょう",
+                    "negative": "tabenakatta deshō 食べなかったでしょう"
+                }
+            },
+            "Present Progressive": {
+                "plain": {
+                    "positive": "tabete iru 食べて いる",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "tabete imasu 食べて います",
+                    "negative": "tabete imasen 食べて いません"
+                }
+            },
+            "Past Progressive": {
+                "plain": {
+                    "positive": "tabete ita 食べて いた",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "tabete imashita 食べて いました",
+                    "negative": "tabete imasen deshita 食べて いませんでした"
+                }
+            },
+            "Provisional Conditional eba": {
+                "plain": {
+                    "positive": "tabereba 食べれば / tabenakereba 食べなければ",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "",
+                    "negative": ""
+                }
+            },
+            "Conditional (-tara form)": {
+                "plain": {
+                    "positive": "tabetara 食べたら",
+                    "negative": "tabenakattara 食べなかったら"
+                },
+                "polite": {
+                    "positive": "tabemashitara 食べましたら",
+                    "negative": "tabemasen deshitara 食べませんでしたら"
+                }
+            },
+            "Potential": {
+                "plain": {
+                    "positive": "taberareru 食べられる",
+                    "negative": "taberarenai 食べられない"
+                },
+                "polite": {
+                    "positive": "taberaremasu 食べられます",
+                    "negative": "taberaremasen 食べられません"
+                }
+            },
+            "Causative": {
+                "plain": {
+                    "positive": "tabesaseru 食べさせる",
+                    "negative": "tabesasenai 食べさせない"
+                },
+                "polite": {
+                    "positive": "tabesasemasu 食べさせます",
+                    "negative": "tabesasemasen 食べさせません"
+                }
+            },
+            "Passive": {
+                "plain": {
+                    "positive": "taberareru 食べられる",
+                    "negative": "taberarenai 食べられない"
+                },
+                "polite": {
+                    "positive": "taberaremasu 食べられます",
+                    "negative": "taberaremasen 食べられません"
+                }
+            }
+        }
+    },
+    "ikimasu": {
+        "hiragana": "い",
+        "kanji": "行く",
+        "meaning": "to go; to move (towards); to head (towards); to leave (for)",
+        "group": "Godan verb - Iku/Yuku special class, Intransitive verb",
+        "conjugations": {
+            "Verb Class": {
+                "plain": {
+                    "positive": "1 ~ Godan ~ 五段",
+                    "negative": ""
+                }
+            },
+            "Stem": {
+                "plain": {
+                    "positive": "ik - 行",
+                    "negative": ""
+                }
+            },
+            "Te form": {
+                "plain": {
+                    "positive": "itte 行って",
+                    "negative": ""
+                }
+            },
+            "Infinitive": {
+                "plain": {
+                    "positive": "iki 行き",
+                    "negative": ""
+                }
+            },
+            "Present Indicative": {
+                "plain": {
+                    "positive": "iku 行く",
+                    "negative": "ikanai 行かない"
+                },
+                "polite": {
+                    "positive": "ikimasu 行きます",
+                    "negative": "ikimasen 行きません"
+                }
+            },
+            "Presumptive \\ Volitional": {
+                "plain": {
+                    "positive": "ikō 行こう iku darō 行く だろう",
+                    "negative": "ikanai darō 行かないだろう"
+                },
+                "polite": {
+                    "positive": "ikimashō 行きましょう iku deshō 行くでしょう",
+                    "negative": "ikanai deshō 行かないでしょう"
+                }
+            },
+            "Imperative": {
+                "plain": {
+                    "positive": "ike 行け",
+                    "negative": "iku na 行くな"
+                },
+                "polite": {
+                    "positive": "itte kudasai 行ってください",
+                    "negative": "ikanai de kudasai 行かないでください"
+                }
+            },
+            "Past Indicative": {
+                "plain": {
+                    "positive": "itta 行った",
+                    "negative": "ikanakatta 行かなかった"
+                },
+                "polite": {
+                    "positive": "ikimashita 行きました",
+                    "negative": "ikimasen deshita 行きませんでした"
+                }
+            },
+            "Past Presumptive": {
+                "plain": {
+                    "positive": "ittarō itta darō 行っただろう",
+                    "negative": "ikanakatta darō 行かなかっただろう"
+                },
+                "polite": {
+                    "positive": "itta deshō 行ったでしょう",
+                    "negative": "ikanakatta deshō 行かなかったでしょう"
+                }
+            },
+            "Present Progressive": {
+                "plain": {
+                    "positive": "itte iru 行って いる",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "itte imasu 行って います",
+                    "negative": "itte imasen 行って いません"
+                }
+            },
+            "Past Progressive": {
+                "plain": {
+                    "positive": "itte ita 行って いた",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "itte imashita 行って いました",
+                    "negative": "itte imasen deshita 行って いませんでした"
+                }
+            },
+            "Provisional Conditional eba": {
+                "plain": {
+                    "positive": "ikeba 行けば / ikanakereba 行かなければ",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "",
+                    "negative": ""
+                }
+            },
+            "Conditional (-tara form)": {
+                "plain": {
+                    "positive": "ittara 行ったら",
+                    "negative": "ikanakattara 行かなかったら"
+                },
+                "polite": {
+                    "positive": "ikimashitara 行きましたら",
+                    "negative": "ikimasen deshitara 行きませんでしたら"
+                }
+            },
+            "Potential": {
+                "plain": {
+                    "positive": "ikeru 行ける",
+                    "negative": "ikenai 行けない"
+                },
+                "polite": {
+                    "positive": "ikemasu 行けます",
+                    "negative": "ikemasen 行けません"
+                }
+            },
+            "Causative": {
+                "plain": {
+                    "positive": "ikaseru 行かせる",
+                    "negative": "ikasenai 行かせない"
+                },
+                "polite": {
+                    "positive": "ikasemasu 行かせます",
+                    "negative": "ikasemasen 行かせません"
+                }
+            },
+            "Passive": {
+                "plain": {
+                    "positive": "ikareru 行かれる",
+                    "negative": "ikarenai 行かれない"
+                },
+                "polite": {
+                    "positive": "ikaremasu 行かれます",
+                    "negative": "ikaremasen 行かれません"
+                }
+            }
+        }
+    },
+    "tsukau": {
+        "hiragana": "つか",
+        "kanji": "使う",
+        "meaning": "to use (a tool, method, etc.); to make use of; to put to use",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "okiru": {
+        "hiragana": "お",
+        "kanji": "起きる",
+        "meaning": "to get up; to rise; to blaze up (fire)",
+        "group": "Ichidan verb, Intransitive verb",
+        "conjugations": {
+            "Verb Class": {
+                "plain": {
+                    "positive": "2 ~ Ichidan ~ 一段",
+                    "negative": ""
+                }
+            },
+            "Stem": {
+                "plain": {
+                    "positive": "oki - 起き",
+                    "negative": ""
+                }
+            },
+            "Te form": {
+                "plain": {
+                    "positive": "okite 起きて",
+                    "negative": ""
+                }
+            },
+            "Infinitive": {
+                "plain": {
+                    "positive": "oki 起き",
+                    "negative": ""
+                }
+            },
+            "Present Indicative": {
+                "plain": {
+                    "positive": "okiru 起きる",
+                    "negative": "okinai 起きない"
+                },
+                "polite": {
+                    "positive": "okimasu 起きます",
+                    "negative": "okimasen 起きません"
+                }
+            },
+            "Presumptive \\ Volitional": {
+                "plain": {
+                    "positive": "okiyō 起きよう okiru darō 起きる だろう",
+                    "negative": "okinai darō 起きない だろう"
+                },
+                "polite": {
+                    "positive": "okimashō 起きましょう okiru deshō 起きるでしょう",
+                    "negative": "okinai deshō 起きないでしょう"
+                }
+            },
+            "Imperative": {
+                "plain": {
+                    "positive": "okiro 起きろ",
+                    "negative": "okiru na 起きるな"
+                },
+                "polite": {
+                    "positive": "okite kudasai 起きて ください",
+                    "negative": "okinai de kudasai 起きないで ください"
+                }
+            },
+            "Past Indicative": {
+                "plain": {
+                    "positive": "okita 起きた",
+                    "negative": "okinakatta 起きなかった"
+                },
+                "polite": {
+                    "positive": "okimashita 起きました",
+                    "negative": "okimasen deshita 起きませんでした"
+                }
+            },
+            "Past Presumptive": {
+                "plain": {
+                    "positive": "okitarō 起きたろう okita darō 起きただろう",
+                    "negative": "okinakatta darō 起きなかっただろう"
+                },
+                "polite": {
+                    "positive": "okita deshō 起きたでしょう",
+                    "negative": "okinakatta deshō 起きなかったでしょう"
+                }
+            },
+            "Present Progressive": {
+                "plain": {
+                    "positive": "okite iru 起きて いる",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "okite imasu 起きて います",
+                    "negative": "okite imasen 起きて いません"
+                }
+            },
+            "Past Progressive": {
+                "plain": {
+                    "positive": "okite ita 起きて いた",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "okite imashita 起きて いました",
+                    "negative": "okite imasen deshita 起きて いませんでした"
+                }
+            },
+            "Provisional Conditional eba": {
+                "plain": {
+                    "positive": "okireba 起きれば / okinakereba 起きなければ",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "",
+                    "negative": ""
+                }
+            },
+            "Conditional (-tara form)": {
+                "plain": {
+                    "positive": "okitara 起きたら",
+                    "negative": "okinakattara 起きなかったら"
+                },
+                "polite": {
+                    "positive": "okimashitara 起きましたら",
+                    "negative": "okimasen deshitara 起きませんでしたら"
+                }
+            },
+            "Potential": {
+                "plain": {
+                    "positive": "okirareru 起きられる",
+                    "negative": "okirarenai 起きられない"
+                },
+                "polite": {
+                    "positive": "okiraremasu 起きられます",
+                    "negative": "okiraremasen 起きられません"
+                }
+            },
+            "Causative": {
+                "plain": {
+                    "positive": "okisaseru 起きさせる",
+                    "negative": "okisasenai 起きさせない"
+                },
+                "polite": {
+                    "positive": "okisasemasu 起きさせます",
+                    "negative": "okisasemasen 起きさせません"
+                }
+            },
+            "Passive": {
+                "plain": {
+                    "positive": "okirareru 起きられる",
+                    "negative": "okirarenai 起きられない"
+                },
+                "polite": {
+                    "positive": "okiraremasu 起きられます",
+                    "negative": "okiraremasen 起きられません"
+                }
+            }
+        }
+    }
+}
