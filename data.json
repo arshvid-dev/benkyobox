@@ -10,7 +10,8 @@
         "hiragana": "ね",
         "kanji": "寝る",
         "meaning": "to sleep (lying down)",
-        "group": "Ichidan verb, Intransitive verb"
+        "group": "Ichidan verb, Intransitive verb",
+        "conjugations": {}
     },
     "hatarakimasu": {
         "hiragana": "はたら",
@@ -485,5 +486,483 @@
                 }
             }
         }
+    },
+    "nemuru": {
+        "hiragana": "ねむ",
+        "kanji": "眠る",
+        "meaning": "to sleep",
+        "group": "Godan verb with 'ru' ending, Intransitive verb",
+        "conjugations": {
+            "Verb Class": {
+                "plain": {
+                    "positive": "1 ~ Godan ~ 五段",
+                    "negative": ""
+                }
+            },
+            "Stem": {
+                "plain": {
+                    "positive": "nemur - 眠",
+                    "negative": ""
+                }
+            },
+            "Te form": {
+                "plain": {
+                    "positive": "nemutte 眠って",
+                    "negative": ""
+                }
+            },
+            "Infinitive": {
+                "plain": {
+                    "positive": "nemuri 眠り",
+                    "negative": ""
+                }
+            },
+            "Present Indicative": {
+                "plain": {
+                    "positive": "nemuru 眠る",
+                    "negative": "nemuranai 眠らない"
+                },
+                "polite": {
+                    "positive": "nemurimasu 眠ります",
+                    "negative": "nemurimasen 眠りません"
+                }
+            },
+            "Presumptive \\ Volitional": {
+                "plain": {
+                    "positive": "nemurō 眠ろう nemuru darō 眠る だろう",
+                    "negative": "nemuranai darō 眠らないだろう"
+                },
+                "polite": {
+                    "positive": "nemurimashō 眠りましょう nemuru deshō 眠るでしょう",
+                    "negative": "nemuranai deshō 眠らないでしょう"
+                }
+            },
+            "Imperative": {
+                "plain": {
+                    "positive": "nemure 眠れ",
+                    "negative": "nemuru na 眠るな"
+                },
+                "polite": {
+                    "positive": "nemutte kudasai 眠ってください",
+                    "negative": "nemuranai de kudasai 眠らないでください"
+                }
+            },
+            "Past Indicative": {
+                "plain": {
+                    "positive": "nemutta 眠った",
+                    "negative": "nemuranakatta 眠らなかった"
+                },
+                "polite": {
+                    "positive": "nemurimashita 眠りました",
+                    "negative": "nemurimasen deshita 眠りませんでした"
+                }
+            },
+            "Past Presumptive": {
+                "plain": {
+                    "positive": "nemuttarō nemutta darō 眠っただろう",
+                    "negative": "nemuranakatta darō 眠らなかっただろう"
+                },
+                "polite": {
+                    "positive": "nemutta deshō 眠ったでしょう",
+                    "negative": "nemuranakatta deshō 眠らなかったでしょう"
+                }
+            },
+            "Present Progressive": {
+                "plain": {
+                    "positive": "nemutte iru 眠って いる",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "nemutte imasu 眠って います",
+                    "negative": "nemutte imasen 眠って いません"
+                }
+            },
+            "Past Progressive": {
+                "plain": {
+                    "positive": "nemutte ita 眠って いた",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "nemutte imashita 眠って いました",
+                    "negative": "nemutte imasen deshita 眠って いませんでした"
+                }
+            },
+            "Provisional Conditional eba": {
+                "plain": {
+                    "positive": "nemureba 眠れば / nemuranakereba 眠らなければ",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "",
+                    "negative": ""
+                }
+            },
+            "Conditional (-tara form)": {
+                "plain": {
+                    "positive": "nemuttara 眠ったら",
+                    "negative": "nemuranakattara 眠らなかったら"
+                },
+                "polite": {
+                    "positive": "nemurimashitara 眠りましたら",
+                    "negative": "nemurimasen deshitara 眠りませんでしたら"
+                }
+            },
+            "Potential": {
+                "plain": {
+                    "positive": "nemureru 眠れる",
+                    "negative": "nemurenai 眠れない"
+                },
+                "polite": {
+                    "positive": "nemuremasu 眠れます",
+                    "negative": "nemuremasen 眠れません"
+                }
+            },
+            "Causative": {
+                "plain": {
+                    "positive": "nemuraseru 眠らせる",
+                    "negative": "nemurasenai 眠らせない"
+                },
+                "polite": {
+                    "positive": "nemurasemasu 眠らせます",
+                    "negative": "nemurasemasen 眠らせません"
+                }
+            },
+            "Passive": {
+                "plain": {
+                    "positive": "nemurareru 眠られる",
+                    "negative": "nemurarenai 眠られない"
+                },
+                "polite": {
+                    "positive": "nemuraremasu 眠られます",
+                    "negative": "nemuraremasen 眠られません"
+                }
+            }
+        }
+    },
+    "kirimasu": {
+        "hiragana": "き",
+        "kanji": "着る",
+        "meaning": "to wear (from the shoulders down); to put on",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "kurimasu": {
+        "hiragana": "く",
+        "kanji": "来る",
+        "meaning": "to come (spatially or temporally); to approach; to arrive",
+        "group": "Kuru verb - special class, Intransitive verb"
+    },
+    "kariru": {
+        "hiragana": "か",
+        "kanji": "借りる",
+        "meaning": "to borrow",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "kashimasu": {
+        "hiragana": "か",
+        "kanji": "貸す",
+        "meaning": "to lend; to loan",
+        "group": "Godan verb with 'su' ending, Transitive verb"
+    },
+    "nichiyoubi": {
+        "hiragana": "にちようび",
+        "kanji": "日曜日",
+        "meaning": "Sunday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "getsuyoubi": {
+        "hiragana": "げつようび",
+        "kanji": "月曜日",
+        "meaning": "Monday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "kayoubi": {
+        "hiragana": "かようび",
+        "kanji": "火曜日",
+        "meaning": "Tuesday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "suiyoubi": {
+        "hiragana": "すいようび",
+        "kanji": "水曜日",
+        "meaning": "Wednesday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "mokuyoubi": {
+        "hiragana": "もくようび",
+        "kanji": "木曜日",
+        "meaning": "Thursday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "kinyoubi": {
+        "hiragana": "きんようび",
+        "kanji": "金曜日",
+        "meaning": "Friday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "doyoubi": {
+        "hiragana": "どようび",
+        "kanji": "土曜日",
+        "meaning": "Saturday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "ikutsu": {
+        "hiragana": "いく",
+        "kanji": "幾つ",
+        "meaning": "how many",
+        "group": "Adverb (fukushi)"
+    },
+    "hitotsu": {
+        "hiragana": "ひと",
+        "kanji": "一つ",
+        "meaning": "one",
+        "group": "Numeric"
+    },
+    "futatsu": {
+        "hiragana": "ふた",
+        "kanji": "二つ",
+        "meaning": "two",
+        "group": "Numeric"
+    },
+    "chikaku": {
+        "hiragana": "ちか",
+        "kanji": "近く",
+        "meaning": "near; neighbourhood; neighborhood; vicinity",
+        "group": "Noun, Noun which may take the genitive case particle 'no', Adverb (fukushi)"
+    },
+    "tonari": {
+        "hiragana": "となり",
+        "kanji": "隣",
+        "meaning": "next (to); adjoining; adjacent",
+        "group": "Noun which may take the genitive case particle 'no', Noun"
+    },
+    "aida": {
+        "hiragana": "あいだ",
+        "kanji": "間",
+        "meaning": "space (between); gap; interval; distance; stretch",
+        "group": "Noun"
+    },
+    "migi": {
+        "hiragana": "みぎ",
+        "kanji": "右",
+        "meaning": "right; right-hand side",
+        "group": "Noun, Noun which may take the genitive case particle 'no'"
+    },
+    "hidari": {
+        "hiragana": "ひだり",
+        "kanji": "左",
+        "meaning": "left; left-hand side",
+        "group": "Noun, Noun which may take the genitive case particle 'no'"
+    },
+    "ue": {
+        "hiragana": "うえ",
+        "kanji": "上",
+        "meaning": "above; over; up",
+        "group": "Noun, Noun which may take the genitive case particle 'no'"
+    },
+    "shita": {
+        "hiragana": "した",
+        "kanji": "舌",
+        "meaning": "tongue",
+        "group": "Noun"
+    },
+    "below": {
+        "hiragana": "した",
+        "kanji": "下",
+        "meaning": "below; down; under; younger (e.g. daughter)",
+        "group": "Noun"
+    },
+    "kareru": {
+        "hiragana": "か",
+        "kanji": "枯れる",
+        "meaning": "to wither (of a plant); to be blasted; to die",
+        "group": "Ichidan verb, Intransitive verb"
+    },
+    "oku": {
+        "hiragana": "お",
+        "kanji": "置く",
+        "meaning": "to put; to place",
+        "group": "Godan verb with 'ku' ending, Transitive verb",
+        "conjugations": {
+            "Verb Class": {
+                "plain": {
+                    "positive": "1 ~ Godan ~ 五段",
+                    "negative": ""
+                }
+            },
+            "Stem": {
+                "plain": {
+                    "positive": "ok - 置",
+                    "negative": ""
+                }
+            },
+            "Te form": {
+                "plain": {
+                    "positive": "oite 置いて",
+                    "negative": ""
+                }
+            },
+            "Infinitive": {
+                "plain": {
+                    "positive": "oki 置き",
+                    "negative": ""
+                }
+            },
+            "Present Indicative": {
+                "plain": {
+                    "positive": "oku 置く",
+                    "negative": "okanai 置かない"
+                },
+                "polite": {
+                    "positive": "okimasu 置きます",
+                    "negative": "okimasen 置きません"
+                }
+            },
+            "Presumptive \\ Volitional": {
+                "plain": {
+                    "positive": "okō 置こう oku darō 置く だろう",
+                    "negative": "okanai darō 置かないだろう"
+                },
+                "polite": {
+                    "positive": "okimashō 置きましょう oku deshō 置くでしょう",
+                    "negative": "okanai deshō 置かないでしょう"
+                }
+            },
+            "Imperative": {
+                "plain": {
+                    "positive": "oke 置け",
+                    "negative": "oku na 置くな"
+                },
+                "polite": {
+                    "positive": "oite kudasai 置いてください",
+                    "negative": "okanai de kudasai 置かないでください"
+                }
+            },
+            "Past Indicative": {
+                "plain": {
+                    "positive": "oita 置いた",
+                    "negative": "okanakatta 置かなかった"
+                },
+                "polite": {
+                    "positive": "okimashita 置きました",
+                    "negative": "okimasen deshita 置きませんでした"
+                }
+            },
+            "Past Presumptive": {
+                "plain": {
+                    "positive": "oitarō oita darō 置いただろう",
+                    "negative": "okanakatta darō 置かなかっただろう"
+                },
+                "polite": {
+                    "positive": "oita deshō 置いたでしょう",
+                    "negative": "okanakatta deshō 置かなかったでしょう"
+                }
+            },
+            "Present Progressive": {
+                "plain": {
+                    "positive": "oite iru 置いて いる",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "oite imasu 置いて います",
+                    "negative": "oite imasen 置いて いません"
+                }
+            },
+            "Past Progressive": {
+                "plain": {
+                    "positive": "oite ita 置いて いた",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "oite imashita 置いて いました",
+                    "negative": "oite imasen deshita 置いて いませんでした"
+                }
+            },
+            "Provisional Conditional eba": {
+                "plain": {
+                    "positive": "okeba 置けば / okanakereba 置かなければ",
+                    "negative": ""
+                },
+                "polite": {
+                    "positive": "",
+                    "negative": ""
+                }
+            },
+            "Conditional (-tara form)": {
+                "plain": {
+                    "positive": "oitara 置いたら",
+                    "negative": "okanakattara 置かなかったら"
+                },
+                "polite": {
+                    "positive": "okimashitara 置きましたら",
+                    "negative": "okimasen deshitara 置きませんでしたら"
+                }
+            },
+            "Potential": {
+                "plain": {
+                    "positive": "okeru 置ける",
+                    "negative": "okenai 置けない"
+                },
+                "polite": {
+                    "positive": "okemasu 置けます",
+                    "negative": "okemasen 置けません"
+                }
+            },
+            "Causative": {
+                "plain": {
+                    "positive": "okaseru 置かせる",
+                    "negative": "okasenai 置かせない"
+                },
+                "polite": {
+                    "positive": "okasemasu 置かせます",
+                    "negative": "okasemasen 置かせません"
+                }
+            },
+            "Passive": {
+                "plain": {
+                    "positive": "okareru 置かれる",
+                    "negative": "okarenai 置かれない"
+                },
+                "polite": {
+                    "positive": "okaremasu 置かれます",
+                    "negative": "okaremasen 置かれません"
+                }
+            }
+        }
+    },
+    "tetsudau": {
+        "hiragana": "てつだ",
+        "kanji": "手伝う",
+        "meaning": "to help; to assist; to aid",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "shimeru": {
+        "hiragana": "し",
+        "kanji": "締める",
+        "meaning": "to tie; to fasten; to tighten",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "akeru": {
+        "hiragana": "あ",
+        "kanji": "開ける",
+        "meaning": "to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "tsukeru": {
+        "hiragana": "つ",
+        "kanji": "付ける",
+        "meaning": "to attach; to join; to connect; to add; to append; to affix; to stick; to glue; to fasten; to sew on; to apply (ointment); to put against",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "tomeru": {
+        "hiragana": "と",
+        "kanji": "止める",
+        "meaning": "to stop; to turn off",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "senmon": {
+        "hiragana": "せんもん",
+        "kanji": "専門",
+        "meaning": "speciality; specialty; special subject of study; area of expertise; (one's) field; (one's) major",
+        "group": "Noun"
     }
 }
