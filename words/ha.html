@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html data-color-theme="auto">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="apple-mobile-web-app-title" content="Jisho">
+    <meta name="theme-color" content="#47DB27">
+    <link href="/opensearch.xml" rel='search' title='Jisho' type='application/opensearchdescription+xml'>
+    <link rel="icon" href="https://assets.jisho.org/assets/touch-icon-017b99ca4bfd11363a97f66cc4c00b1667613a05e38d08d858aa5e2a35dce055.png">
+    <link rel="apple-touch-icon" href="https://assets.jisho.org/assets/touch-icon-017b99ca4bfd11363a97f66cc4c00b1667613a05e38d08d858aa5e2a35dce055.png">
+      <link rel="canonical" href="/search/ha">
+    <script>
+
+/* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-touch-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes
+ */
+;window.Modernizr=function(a,b,c){function z(a){j.cssText=a}function A(a,b){return z(m.join(a+";")+(b||""))}function B(a,b){return typeof a===b}function C(a,b){return!!~(""+a).indexOf(b)}function D(a,b){for(var d in a){var e=a[d];if(!C(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function E(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:B(f,"function")?f.bind(d||b):f}return!1}function F(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+o.join(d+" ")+d).split(" ");return B(b,"string")||B(b,"undefined")?D(e,b):(e=(a+" "+p.join(d+" ")+d).split(" "),E(e,b,c))}var d="2.6.2",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n="Webkit Moz O ms",o=n.split(" "),p=n.toLowerCase().split(" "),q={},r={},s={},t=[],u=t.slice,v,w=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},x={}.hasOwnProperty,y;!B(x,"undefined")&&!B(x.call,"undefined")?y=function(a,b){return x.call(a,b)}:y=function(a,b){return b in a&&B(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=u.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(u.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(u.call(arguments)))};return e}),q.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:w(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var G in q)y(q,G)&&(v=G.toLowerCase(),e[v]=q[G](),t.push((e[v]?"":"no-")+v));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)y(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},z(""),i=k=null,e._version=d,e._prefixes=m,e._domPrefixes=p,e._cssomPrefixes=o,e.testProp=function(a){return D([a])},e.testAllProps=F,e.testStyles=w,e.prefixed=function(a,b,c){return b?F(a,b,c):F(a,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+t.join(" "):""),e}(this,this.document);
+
+</script>
+
+<script>
+
+  Modernizr.addTest('speech', function(){
+    return Modernizr.prefixed('speechRecognition', window);
+  });
+
+  Modernizr.addTest('AudioContext', function(){
+    return Modernizr.prefixed('AudioContext', window);
+  });
+
+  Modernizr.addTest('getUserMedia', function(){
+    return Modernizr.prefixed('getUserMedia', navigator);
+  });
+
+</script>
+
+    <link rel="stylesheet" media="screen" href="https://assets.jisho.org/assets/application-61d8e80944056be2e8c772e3d3b243767cc3550ca5b7da4d62ba58a5604fc3c3.css" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="EVPiacQkAhPUFIhlvuntqUlYzgRKJ1OHuALbXouITKzjg+vW9mdwUay/uRFt0AhP2p/2XUpkxjgYVJNWuZu5LA==" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://assets.jisho.org/assets/favicon-062c4a0240e1e6d72c38aa524742c2d558ee6234497d91dd6b75a182ea823d65.ico" />
+    <title>ha - Jisho.org</title>
+    <meta name="Description" content="Japanese dictionary search results for ha.">
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@jisho" />
+      <meta name="twitter:title" content="Japanese dictionary search for &quot;ha&quot;" />
+      <meta name="twitter:description" content="9336 words, 71 kanji and 14 sentences found. See the full details ..." />
+  </head>
+  <body class=" highlight_keyword highlight_common_readings highlight_common_representations production">
+    
+<header class="row collapse">
+  <div class="small-4 columns">
+    <h1 class="logo"><a href="/">Jisho</a></h1>
+  </div>
+  <div class="small-8 columns">
+    <nav class="nav-main_navigation">
+  <ul class="links">
+    <li><a href="/forum">Forum</a></li>
+    <li><a href="/about">About</a></li>
+    <li>
+      <div class="color_theme_picker--wrapper">
+        <a href="#">Theme</a>
+        <ul class="color_theme_picker--choices">
+          <li><a rel="nofollow" href="/?color_theme=light">Light mode</a></li>
+          <li><a rel="nofollow" href="/?color_theme=dark">Dark mode</a></li>
+          <li><div>Auto</div></li>
+        </ul>
+      </div>
+    </li> 
+    <li>
+      <div id="login_link">
+          <a href="/auth/auth0">Log in</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+    <div class="row collapse">
+      <div class="large-12 columns">
+        <form class="search" data-live="false" id="search" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />  <div id="input_methods" class="input_methods">
+    <div class="input_method_button disable-mobile-hover-background" id="handwriting_button">
+      <svg viewBox="0 0 30 30" class="icon tablet-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#tablet"></use>
+</svg>
+
+      <h4>Draw</h4>
+    </div>
+    <div class="input_method_button disable-mobile-hover-background" id="radical_button">
+      <svg viewBox="0 0 30 30" class="icon radical-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#radical"></use>
+</svg>
+
+      <h4>Radicals</h4>
+    </div>
+    <div class="input_method_button disable-mobile-hover-background" id="speech_button">
+      <svg viewBox="0 0 30 30" class="icon speech-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#speech"></use>
+</svg>
+
+      <h4>Voice</h4>
+    </div>
+  </div>
+  <div class="overlay">
+    <div id="search_main" class="main">
+      <div class="inner">
+        <div id="advanced_button" class="search_type">
+          <span class="text" id="search_dropdown_text">All</span>
+          <span class="carat">▾</span>
+        </div>
+        <button type="submit" class="submit icon" tabindex="2">
+          <svg viewBox="0 0 30 30" class="icon search-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#search"></use>
+</svg>
+
+        </button>
+        <a class="search-form_clear-button_js search-form_clear-button icon" accesskey="1" tabindex="3">
+          <svg viewBox="0 0 30 30" class="icon clear-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#clear"></use>
+</svg>
+
+        </a>
+
+        <div class="text_input">
+          <div class="hidden range"></div>
+          <input
+            type="text"
+            class="keyword japanese_gothic"
+            name="keyword"
+            id="keyword"
+            value="ha"
+            tabindex="1"
+            lang="ja"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            spellcheck="false"
+            placeholder="English, Japanese, Romaji, words or text"
+            data-autoload="true"
+            data-effective-keyword="は"
+          />
+        </div>
+      </div>
+      <div id="search_sub" class="sub">
+        <div id="radical_area" class="area radical">
+  <div class="results_wrapper">
+  <div class="results">
+    <div class="list">
+      <div class="instructions">
+        <div class="vertical-bottom">
+          <div class="vertical-bottom-inner">
+            
+    <div class="arrow">▾</div>
+    <div class="text">
+      Find kanji by their parts. Click on
+      <svg viewBox="0 0 30 30" class="icon reset-icon inline">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#reset"></use>
+</svg>
+
+      to reset radicals.
+    </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="show_more">More</div>
+    <div class="show_less link">Less</div>
+  </div>
+  <div class="scroll_indicator show-for-small-only"></div>
+</div>
+  <!-- <p>
+  Click on the parts that are in the kanji you are looking for. You can click on them again to de-select them.
+  <input type="button" value="Reset" id="reset_button" onclick='Radicals.reset()' />
+</p> -->
+
+<ul class="radical_table clearfix" lang="ja">
+  <li class="reset_icon_list_item">
+    <svg viewBox="0 0 30 30" class="icon reset-icon reset_radicals" title="Reset selection">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#reset"></use>
+</svg>
+
+  </li>
+  <li class="number">1</li>
+  <li class="radical" data-radical="1">一</li>
+  <li class="radical" data-radical="2">｜</li>
+  <li class="radical" data-radical="3">丶</li>
+  <li class="radical" data-radical="4">ノ</li>
+  <li class="radical" data-radical="5">乙</li>
+  <li class="radical" data-radical="6">亅</li>
+  <li class="number">2</li>
+  <li class="radical" data-radical="7">二</li>
+  <li class="radical" data-radical="8">亠</li>
+  <li class="radical" data-radical="9">人</li>
+  <li class="radical radical-image radical-10" data-radical="10" data-radk="化">⺅</li>
+  <li class="radical radical-image radical-11" data-radical="11" data-radk="个">𠆢</li>
+  <li class="radical" data-radical="12">儿</li>
+  <li class="radical" data-radical="13">入</li>
+  <li class="radical" data-radical="14">ハ</li>
+  <li class="radical radical-image radical-15" data-radical="15" data-radk="并">丷</li>
+  <li class="radical" data-radical="16">冂</li>
+  <li class="radical" data-radical="17">冖</li>
+  <li class="radical" data-radical="18">冫</li>
+  <li class="radical" data-radical="19">几</li>
+  <li class="radical" data-radical="20">凵</li>
+  <li class="radical" data-radical="21">刀</li>
+  <li class="radical radical-image radical-22" data-radical="22" data-radk="刈">⺉</li>
+  <li class="radical" data-radical="23">力</li>
+  <li class="radical" data-radical="24">勹</li>
+  <li class="radical" data-radical="25">匕</li>
+  <li class="radical" data-radical="26">匚</li>
+  <li class="radical" data-radical="27">十</li>
+  <li class="radical" data-radical="28">卜</li>
+  <li class="radical" data-radical="29">卩</li>
+  <li class="radical" data-radical="30">厂</li>
+  <li class="radical" data-radical="31">厶</li>
+  <li class="radical" data-radical="32">又</li>
+  <li class="radical" data-radical="33">マ</li>
+  <li class="radical" data-radical="34">九</li>
+  <li class="radical" data-radical="35">ユ</li>
+  <li class="radical" data-radical="36">乃</li>
+  <li class="radical" data-radical="360" data-radk="乞">𠂉</li>
+  <li class="number">3</li>
+  <li class="radical radical-image radical-37" data-radical="37" data-radk="込">⻌</li>
+  <li class="radical" data-radical="38">口</li>
+  <li class="radical" data-radical="39">囗</li>
+  <li class="radical" data-radical="40">土</li>
+  <li class="radical" data-radical="41">士</li>
+  <li class="radical" data-radical="42">夂</li>
+  <li class="radical" data-radical="43">夕</li>
+  <li class="radical" data-radical="44">大</li>
+  <li class="radical" data-radical="45">女</li>
+  <li class="radical" data-radical="46">子</li>
+  <li class="radical" data-radical="47">宀</li>
+  <li class="radical" data-radical="48">寸</li>
+  <li class="radical" data-radical="49">小</li>
+  <li class="radical radical-image radical-50" data-radical="50" data-radk="尚">⺌</li>
+  <li class="radical" data-radical="51">尢</li>
+  <li class="radical" data-radical="52">尸</li>
+  <li class="radical" data-radical="53">屮</li>
+  <li class="radical" data-radical="54">山</li>
+  <li class="radical" data-radical="55">川</li>
+  <li class="radical" data-radical="56">巛</li>
+  <li class="radical" data-radical="57">工</li>
+  <li class="radical" data-radical="58">已</li>
+  <li class="radical" data-radical="59">巾</li>
+  <li class="radical" data-radical="60">干</li>
+  <li class="radical" data-radical="61">幺</li>
+  <li class="radical" data-radical="62">广</li>
+  <li class="radical" data-radical="63">廴</li>
+  <li class="radical" data-radical="64">廾</li>
+  <li class="radical" data-radical="65">弋</li>
+  <li class="radical" data-radical="66">弓</li>
+  <li class="radical" data-radical="67">ヨ</li>
+  <li class="radical" data-radical="68">彑</li>
+  <li class="radical" data-radical="69">彡</li>
+  <li class="radical" data-radical="70">彳</li>
+  <li class="radical radical-image radical-71" data-radical="71" data-radk="忙">⺖</li>
+  <li class="radical radical-image radical-72" data-radical="72" data-radk="扎">⺘</li>
+  <li class="radical radical-image radical-73" data-radical="73" data-radk="汁">⺡</li>
+  <li class="radical radical-image radical-74" data-radical="74" data-radk="犯">⺨</li>
+  <li class="radical radical-image radical-75" data-radical="75" data-radk="艾">⺾</li>
+  <li class="radical radical-image radical-76" data-radical="76" data-radk="邦">⻏</li>
+  <li class="radical radical-image radical-77" data-radical="77" data-radk="阡">⻖</li>
+  <li class="radical" data-radical="78">也</li>
+  <li class="radical" data-radical="79">亡</li>
+  <li class="radical" data-radical="80">及</li>
+  <li class="radical" data-radical="81">久</li>
+  <li class="number">4</li>
+  <li class="radical radical-image radical-82" data-radical="82" data-radk="老">⺹</li>
+  <li class="radical" data-radical="83">心</li>
+  <li class="radical" data-radical="84">戈</li>
+  <li class="radical" data-radical="85">戸</li>
+  <li class="radical" data-radical="86">手</li>
+  <li class="radical" data-radical="87">支</li>
+  <li class="radical" data-radical="88">攵</li>
+  <li class="radical" data-radical="89">文</li>
+  <li class="radical" data-radical="90">斗</li>
+  <li class="radical" data-radical="91">斤</li>
+  <li class="radical" data-radical="92">方</li>
+  <li class="radical" data-radical="93">无</li>
+  <li class="radical" data-radical="94">日</li>
+  <li class="radical" data-radical="95">曰</li>
+  <li class="radical" data-radical="96">月</li>
+  <li class="radical" data-radical="97">木</li>
+  <li class="radical" data-radical="98">欠</li>
+  <li class="radical" data-radical="99">止</li>
+  <li class="radical" data-radical="100">歹</li>
+  <li class="radical" data-radical="101">殳</li>
+  <li class="radical" data-radical="102">比</li>
+  <li class="radical" data-radical="103">毛</li>
+  <li class="radical" data-radical="104">氏</li>
+  <li class="radical" data-radical="105">气</li>
+  <li class="radical" data-radical="106">水</li>
+  <li class="radical" data-radical="107">火</li>
+  <li class="radical radical-image radical-108" data-radical="108" data-radk="杰">⺣</li>
+  <li class="radical" data-radical="109">爪</li>
+  <li class="radical" data-radical="110">父</li>
+  <li class="radical" data-radical="111">爻</li>
+  <li class="radical" data-radical="112">爿</li>
+  <li class="radical" data-radical="113">片</li>
+  <li class="radical" data-radical="114">牛</li>
+  <li class="radical" data-radical="115">犬</li>
+  <li class="radical radical-image radical-116" data-radical="116" data-radk="礼">⺭</li>
+  <li class="radical" data-radical="117">王</li>
+  <li class="radical" data-radical="118">元</li>
+  <li class="radical" data-radical="119">井</li>
+  <li class="radical" data-radical="120">勿</li>
+  <li class="radical" data-radical="121">尤</li>
+  <li class="radical" data-radical="122">五</li>
+  <li class="radical" data-radical="123">屯</li>
+  <li class="radical" data-radical="124">巴</li>
+  <li class="radical" data-radical="125">毋</li>
+  <li class="number">5</li>
+  <li class="radical" data-radical="126">玄</li>
+  <li class="radical" data-radical="127">瓦</li>
+  <li class="radical" data-radical="128">甘</li>
+  <li class="radical" data-radical="129">生</li>
+  <li class="radical" data-radical="130">用</li>
+  <li class="radical" data-radical="131">田</li>
+  <li class="radical" data-radical="132">疋</li>
+  <li class="radical radical-image radical-133" data-radical="133" data-radk="疔">疒</li>
+  <li class="radical" data-radical="134">癶</li>
+  <li class="radical" data-radical="135">白</li>
+  <li class="radical" data-radical="136">皮</li>
+  <li class="radical" data-radical="137">皿</li>
+  <li class="radical" data-radical="138">目</li>
+  <li class="radical" data-radical="139">矛</li>
+  <li class="radical" data-radical="140">矢</li>
+  <li class="radical" data-radical="141">石</li>
+  <li class="radical" data-radical="142">示</li>
+  <li class="radical radical-image radical-143" data-radical="143" data-radk="禹">禸</li>
+  <li class="radical" data-radical="144">禾</li>
+  <li class="radical" data-radical="145">穴</li>
+  <li class="radical" data-radical="146">立</li>
+  <li class="radical radical-image radical-147" data-radical="147" data-radk="初">⻂</li>
+  <li class="radical" data-radical="148">世</li>
+  <li class="radical" data-radical="149">巨</li>
+  <li class="radical" data-radical="150">冊</li>
+  <li class="radical" data-radical="151">母</li>
+  <li class="radical radical-image radical-152" data-radical="152" data-radk="買">⺲</li>
+  <li class="radical" data-radical="153">牙</li>
+  <li class="number">6</li>
+  <li class="radical" data-radical="154">瓜</li>
+  <li class="radical" data-radical="155">竹</li>
+  <li class="radical" data-radical="156">米</li>
+  <li class="radical" data-radical="157">糸</li>
+  <li class="radical" data-radical="158">缶</li>
+  <li class="radical" data-radical="159">羊</li>
+  <li class="radical" data-radical="160">羽</li>
+  <li class="radical" data-radical="161">而</li>
+  <li class="radical" data-radical="162">耒</li>
+  <li class="radical" data-radical="163">耳</li>
+  <li class="radical" data-radical="164">聿</li>
+  <li class="radical" data-radical="165">肉</li>
+  <li class="radical" data-radical="166">自</li>
+  <li class="radical" data-radical="167">至</li>
+  <li class="radical" data-radical="168">臼</li>
+  <li class="radical" data-radical="169">舌</li>
+  <li class="radical" data-radical="170">舟</li>
+  <li class="radical" data-radical="171">艮</li>
+  <li class="radical" data-radical="172">色</li>
+  <li class="radical" data-radical="173">虍</li>
+  <li class="radical" data-radical="174">虫</li>
+  <li class="radical" data-radical="175">血</li>
+  <li class="radical" data-radical="176">行</li>
+  <li class="radical" data-radical="177">衣</li>
+  <li class="radical" data-radical="178">西</li>
+  <li class="number">7</li>
+  <li class="radical" data-radical="179">臣</li>
+  <li class="radical" data-radical="180">見</li>
+  <li class="radical" data-radical="181">角</li>
+  <li class="radical" data-radical="182">言</li>
+  <li class="radical" data-radical="183">谷</li>
+  <li class="radical" data-radical="184">豆</li>
+  <li class="radical" data-radical="185">豕</li>
+  <li class="radical" data-radical="186">豸</li>
+  <li class="radical" data-radical="187">貝</li>
+  <li class="radical" data-radical="188">赤</li>
+  <li class="radical" data-radical="189">走</li>
+  <li class="radical" data-radical="190">足</li>
+  <li class="radical" data-radical="191">身</li>
+  <li class="radical" data-radical="192">車</li>
+  <li class="radical" data-radical="193">辛</li>
+  <li class="radical" data-radical="194">辰</li>
+  <li class="radical" data-radical="195">酉</li>
+  <li class="radical" data-radical="196">釆</li>
+  <li class="radical" data-radical="197">里</li>
+  <li class="radical" data-radical="198">舛</li>
+  <li class="radical" data-radical="199">麦</li>
+  <li class="number">8</li>
+  <li class="radical" data-radical="200">金</li>
+  <li class="radical" data-radical="201">長</li>
+  <li class="radical" data-radical="202">門</li>
+  <li class="radical" data-radical="203">隶</li>
+  <li class="radical" data-radical="204">隹</li>
+  <li class="radical" data-radical="205">雨</li>
+  <li class="radical" data-radical="206">青</li>
+  <li class="radical" data-radical="207">非</li>
+  <li class="radical" data-radical="208">奄</li>
+  <li class="radical" data-radical="209">岡</li>
+  <li class="radical" data-radical="210">免</li>
+  <li class="radical" data-radical="211">斉</li>
+  <li class="number">9</li>
+  <li class="radical" data-radical="212">面</li>
+  <li class="radical" data-radical="213">革</li>
+  <li class="radical" data-radical="214">韭</li>
+  <li class="radical" data-radical="215">音</li>
+  <li class="radical" data-radical="216">頁</li>
+  <li class="radical" data-radical="217">風</li>
+  <li class="radical" data-radical="218">飛</li>
+  <li class="radical" data-radical="219">食</li>
+  <li class="radical" data-radical="220">首</li>
+  <li class="radical" data-radical="221">香</li>
+  <li class="radical" data-radical="222">品</li>
+  <li class="number">10</li>
+  <li class="radical" data-radical="223">馬</li>
+  <li class="radical" data-radical="224">骨</li>
+  <li class="radical" data-radical="225">高</li>
+  <li class="radical" data-radical="226">髟</li>
+  <li class="radical" data-radical="227">鬥</li>
+  <li class="radical" data-radical="228">鬯</li>
+  <li class="radical" data-radical="229">鬲</li>
+  <li class="radical" data-radical="230">鬼</li>
+  <li class="radical" data-radical="231">竜</li>
+  <li class="radical" data-radical="232">韋</li>
+  <li class="number">11</li>
+  <li class="radical" data-radical="233">魚</li>
+  <li class="radical" data-radical="234">鳥</li>
+  <li class="radical" data-radical="235">鹵</li>
+  <li class="radical" data-radical="236">鹿</li>
+  <li class="radical" data-radical="237">麻</li>
+  <li class="radical" data-radical="238">亀</li>
+  <li class="radical radical-image radical-239" data-radical="239" data-radk="滴">啇</li>
+  <li class="radical" data-radical="240">黄</li>
+  <li class="radical" data-radical="241">黒</li>
+  <li class="number">12</li>
+  <li class="radical" data-radical="242">黍</li>
+  <li class="radical" data-radical="243">黹</li>
+  <li class="radical" data-radical="244">無</li>
+  <li class="radical" data-radical="245">歯</li>
+  <li class="number">13</li>
+  <li class="radical" data-radical="246">黽</li>
+  <li class="radical" data-radical="247">鼎</li>
+  <li class="radical" data-radical="248">鼓</li>
+  <li class="radical" data-radical="249">鼠</li>
+  <li class="number">14</li>
+  <li class="radical" data-radical="250">鼻</li>
+  <li class="radical" data-radical="251">齊</li>
+  <li class="number">17</li>
+  <li class="radical" data-radical="252">龠</li>
+</ul>
+
+</div>
+
+        <div id="handwriting_area" class="area handwriting" data-url="/handwriting">
+  <div class="results_wrapper">
+  <div class="results">
+    <div class="list">
+      <div class="instructions">
+        <div class="vertical-bottom">
+          <div class="vertical-bottom-inner">
+            
+    <div class="arrow">▾</div>
+    <div class="text">Input kanji by handwriting. Just start drawing!</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="show_more">More</div>
+    <div class="show_less link">Less</div>
+  </div>
+  <div class="scroll_indicator show-for-small-only"></div>
+</div>
+  <div class="inputs">
+    <div class="panel disablePanZoomInIE">
+  <canvas width="310" height="275"></canvas>
+  <svg viewBox="0 0 30 30" class="icon pencil-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#pencil"></use>
+</svg>
+
+  <div class="buttons">
+    <button type="button" class="tiny reset button">Clear</button>
+    <button type="button" class="tiny back button">Back</button>
+  </div>
+</div>
+
+    <div class="panel disablePanZoomInIE">
+  <canvas width="310" height="275"></canvas>
+  <svg viewBox="0 0 30 30" class="icon pencil-icon ">
+  <use xlink:href="https://jisho.org/assets/icons-ab7975eb6f8bb532f99ba2d769be43c5431dec4c0e4d220df7367f1d954d9424.svg#pencil"></use>
+</svg>
+
+  <div class="buttons">
+    <button type="button" class="tiny reset button">Clear</button>
+    <button type="button" class="tiny back button">Back</button>
+  </div>
+</div>
+
+  </div>
+</div>
+
+        <div id="speech_area" class="area speech">
+
+  <div class="speech_results"></div>
+
+  <div class="explanation">
+    <div class="arrow">▴</div>
+    <div class="text">
+      Speak! You can use words like "back", "clear", "stop", "input", or "search".  At any time say "Japanese" to switch to Japanese (requires permissions again).
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="tiny english">English</button>
+    <button class="tiny japanese">Japanese</button>
+  </div>
+</div>
+
+        <div id="advanced_area" class="hidden area advanced">
+  <div class="filters">
+  <ul class="button-group radius" data-filter-group="type">
+    <li><a accesskey="a" class=" filter small button active" data-filter="type-all" href="//jisho.org/search/ha">All</a></li>
+    <li><a accesskey="w" class=" filter small button" data-filter="words" href="//jisho.org/search/ha">Words</a></li>
+    <li><a accesskey="k" class=" filter small button" data-filter="kanji" href="//jisho.org/search/ha">Kanji</a></li>
+    <li><a accesskey="s" class=" filter small button" data-filter="sentences" href="//jisho.org/search/ha">Sentences</a></li>
+    <li><a accesskey="n" class=" filter small button" data-filter="names" href="//jisho.org/search/ha">Names</a></li>
+  </ul>
+    <ul class="button-group radius" data-filter-group="pos">
+      <li><a class=" filter small button active" data-filter="pos-all" href="//jisho.org/search/ha">All</a></li>
+      <li><a class=" filter small button" data-filter="noun" href="//jisho.org/search/ha">Nouns</a></li>
+      <li><a class=" filter small button" data-filter="verb" href="//jisho.org/search/ha">Verbs</a></li>
+      <li><a class=" filter small button" data-filter="adjective" href="//jisho.org/search/ha">Adjectives</a></li>
+      <li><a class=" filter small button" data-filter="particle" href="//jisho.org/search/ha">Particles</a></li>
+      <li><a class=" filter small button" data-filter="counter" href="//jisho.org/search/ha">Counters</a></li>
+    </ul>
+    <ul class="button-group radius" data-filter-group="level">
+      <li><a class=" filter small button active" data-filter="level-all" href="//jisho.org/search/ha">All</a></li>
+        <li><a class=" filter small button" data-filter="common" href="//jisho.org/search/ha">Common</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n1" href="//jisho.org/search/ha">JLPT N1</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n2" href="//jisho.org/search/ha">JLPT N2</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n3" href="//jisho.org/search/ha">JLPT N3</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n4" href="//jisho.org/search/ha">JLPT N4</a></li>
+      <li><a class=" filter small button" data-filter="jlpt-n5" href="//jisho.org/search/ha">JLPT N5</a></li>
+    </ul>
+  <p>
+    Read the <a href="//jisho.org/docs">advanced search options documentation</a> for a full list of available search options.
+  </p>
+</div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+
+</form>
+      </div>
+    </div>
+    <div id="inflection_modal" class="reveal-modal small" data-reveal>
+      <div class="modal_content"></div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <div id="page_container" class="row">
+      <div class="large-12 columns">
+        
+        
+
+<div id="main_results">
+  <div id="result_area">
+
+
+
+
+  </div>
+
+  <div class="row">
+
+        <div id="the_corrector" class="large-12 columns">
+          <p class="no-margin">
+            Searched for <strong><span class="hilite_1">は</span>.</strong>
+
+            <!-- Effective was: は -->
+
+              You can also try a search for <strong><span class="meant"><a class="hilite_4" href="//jisho.org/search/%22ha%22">&quot;ha&quot;</a></span></strong>.
+          </p>
+        </div>
+
+
+      <div id="primary" class="large-8 columns">
+
+          <div class="exact_block">
+            <h4>Words<span class="result_count"> — 9336 found</span></h4>
+            <!--<div class="block_header">Exact matches</div>-->
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span></span>
+      </span>
+      <span class="text">
+        <span>は</span>
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span>  <a class="concept_light-status_link" data-dropdown="links_drop_51859fb0d5dda7295402f2b0" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859fb0d5dda7295402f2b0" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=2028920&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Particle</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">indicates sentence topic</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-info">pronounced わ in modern Japanese</span></span></div></div><div class="meaning-tags">Particle</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">indicates contrast with another option (stated or unstated)</span><span>&#8203;</span></div></div><div class="meaning-tags">Particle</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">adds emphasis</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">Ha (kana)</span><span>&#8203;</span><span class="meaning-abstract">は, in hiragana, or ハ in katakana, is one of the Japanese ...<a href="//jisho.org/word/%E3%81%AF"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E3%81%AF">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        歯
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 12</a></span> <audio id="audio_歯:は" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/70b4fb0ca7b1d303658661deaf5df13d.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/70b4fb0ca7b1d303658661deaf5df13d.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_歯:は">Play audio</a> <a href="#" data-reveal-id="links_coll_51859b0fd5dda7295400e864" data-reveal="true" class="concept_light-status_link">Show 7 collocations</a> <div id="links_coll_51859b0fd5dda7295400e864" class="reveal-modal small" data-reveal="true"><ul class="no-bullet"><li><a href="/search/%E6%AD%AF%E3%81%8C%E6%B5%AE%E3%81%8F%20%23words">歯が浮く - to have one&#39;s teeth set on edge</a></li><li><a href="/search/%E6%AD%AF%E3%82%92%E3%81%8F%E3%81%84%E3%81%97%E3%81%B0%E3%82%8B%20%23words">歯をくいしばる - to bear up in tragedy</a></li><li><a href="/search/%E6%AD%AF%E3%82%92%E6%8A%9C%E3%81%8F%20%23words">歯を抜く - to pull teeth out</a></li><li><a href="/search/%E6%AD%AF%E3%82%92%E7%A3%A8%E3%81%8F%20%23words">歯を磨く - to brush one&#39;s teeth</a></li><li><a href="/search/%E4%B8%80%E3%81%A4%E3%81%AB%E3%81%AF%20%23words">一つには - for one thing ...</a></li><li><a href="/search/%E6%99%82%E3%81%AB%E3%81%AF%20%23words">時には - at times</a></li><li><a href="/search/%E7%84%A1%E3%81%97%E3%81%AB%E3%81%AF%20%23words">無しには - without</a></li></ul></div> <a class="concept_light-status_link" data-dropdown="links_drop_51859b0fd5dda7295400e864" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859b0fd5dda7295400e864" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E6%AD%AF%20%23sentences">Sentence search for 歯</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="/search/%E9%BD%92%20%23sentences">Sentence search for 齒</a></li><li><a href="//jisho.org/search/%E6%AD%AF%20%23kanji">Kanji details for 歯</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1313000&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">tooth; teeth</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">tooth (of a comb, saw, etc.); cog</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">support (of a geta)</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">Human tooth</span><span>&#8203;</span><span class="meaning-abstract">Teeth of humans are small, calcified, whitish structures ...<a href="//jisho.org/word/%E6%AD%AF"> Read more</a></span></div></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">齒 【は】</span></span></div></div><div class="meaning-tags">Notes</div><div class="meaning-wrapper"><div class="meaning-definition meaning-representation_notes zero-padding"><span class="">齒: Out-dated kanji or kanji usage.</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E6%AD%AF">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        葉
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N4</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 10</a></span>  <a class="concept_light-status_link" data-dropdown="links_drop_51859ca9d5dda72954019a16" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859ca9d5dda72954019a16" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E8%91%89%20%23sentences">Sentence search for 葉</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E8%91%89%20%23kanji">Kanji details for 葉</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1546550&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">leaf; blade (of grass); (pine) needle; frond; foliage</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">Leaf</span><span>&#8203;</span><span class="meaning-abstract">A leaf is an organ of a vascular plant, as defined in bot...<a href="//jisho.org/word/%E8%91%89"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E8%91%89">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        刃
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N1</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 44</a></span> <audio id="audio_刃:は" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/00edc5457ae2949d5f51fe8a9e5861d9.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/00edc5457ae2949d5f51fe8a9e5861d9.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_刃:は">Play audio</a> <a href="#" data-reveal-id="links_coll_51859b73d5dda729540113ba" data-reveal="true" class="concept_light-status_link">Show 1 collocation</a> <div id="links_coll_51859b73d5dda729540113ba" class="reveal-modal small" data-reveal="true"><ul class="no-bullet"><li><a href="/search/%E5%88%83%E3%82%92%E4%BA%A4%E3%81%88%E3%82%8B%20%23words">刃を交える - to cross swords (with)</a></li></ul></div> <a class="concept_light-status_link" data-dropdown="links_drop_51859b73d5dda729540113ba" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859b73d5dda729540113ba" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E5%88%83%20%23sentences">Sentence search for 刃</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E5%88%83%20%23kanji">Kanji details for 刃</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1369820&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">edge (of a knife or sword); blade</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">prong (of an electrical plug)</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">Blade</span><span>&#8203;</span><span class="meaning-abstract">A blade is that portion of a tool, weapon, or machine wit...<a href="//jisho.org/word/%E5%88%83"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E5%88%83">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        派
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N1</span>  <a class="concept_light-status_link" data-dropdown="links_drop_51859c25d5dda729540160ba" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859c25d5dda729540160ba" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E6%B4%BE%20%23sentences">Sentence search for 派</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E6%B4%BE%20%23kanji">Kanji details for 派</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1471120&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun, Noun, used as a suffix</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">group; faction; clique; coterie</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">わたし</span><span class="unlinked">私</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="unlinked">ネコ</span></li><li class="clearfix"><span class="furigana">は</span><span class="unlinked"><span class="hit">派</span></span></li><li class="clearfix"><span class="unlinked">です</span></li>。</ul><span class="english" lang="en">I am a cat person.</span></div></span></div><div class="meaning-tags">Noun, Noun, used as a suffix</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">(political) faction; wing; camp</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">かれ</span><span class="unlinked">彼</span></li><li class="clearfix"><span class="unlinked">は</span></li>福田<li class="clearfix"><span class="furigana">は</span><span class="unlinked"><span class="hit">派</span></span></li><li class="clearfix"><span class="unlinked">に</span></li><li class="clearfix"><span class="furigana">ぞく</span><span class="unlinked">属していました</span></li>。</ul><span class="english" lang="en">He once belonged to the Fukuda faction.</span></div></span></div><div class="meaning-tags">Noun, Noun, used as a suffix</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">school (of thought, painting, etc.)</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="unlinked">その</span></li><li class="clearfix"><span class="furigana">ちょうこくか</span><span class="unlinked">彫刻家</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="unlinked">ルネサンス</span></li><li class="clearfix"><span class="furigana">は</span><span class="unlinked"><span class="hit">派</span></span></li><li class="clearfix"><span class="unlinked">に</span></li><li class="clearfix"><span class="furigana">ぞく</span><span class="unlinked">属する</span></li>。</ul><span class="english" lang="en">The sculptor belongs to the Renaissance school.</span></div></span></div><div class="meaning-tags">Noun, Noun, used as a suffix</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">sect; denomination</span><span>&#8203;</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E6%B4%BE">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はね</span>
+      </span>
+      <span class="text">
+        羽
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N3</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 5</a></span> <audio id="audio_羽:はね" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/40d073b6bf65330c21c704fa8f3f07e2.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/40d073b6bf65330c21c704fa8f3f07e2.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_羽:はね">Play audio</a> <a class="concept_light-status_link" data-dropdown="links_drop_51859a19d5dda72954007d36" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859a19d5dda72954007d36" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E7%BE%BD%20%23sentences">Sentence search for 羽</a></li><li><a href="/search/%E3%81%AF%E3%81%AD%20%23sentences">Sentence search for はね</a></li><li><a href="/search/%E7%BE%BD%E6%A0%B9%20%23sentences">Sentence search for 羽根</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E7%BE%BD%20%23kanji">Kanji details for 羽</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1171680&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">feather; plume; down</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">りっぱ</span><span class="unlinked">立派な</span></li><li class="clearfix"><span class="furigana">はね</span><span class="unlinked"><span class="hit">羽</span></span></li><li class="clearfix"><span class="unlinked">が</span></li><li class="clearfix"><span class="furigana">りっぱ</span><span class="unlinked">立派な</span></li><li class="clearfix"><span class="furigana">とり</span><span class="unlinked">鳥</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="unlinked">つくる</span></li>。</ul><span class="english" lang="en">Fine feathers make fine birds.</span></div></span></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">wing</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="unlinked">羽</span></li><li class="clearfix"><span class="unlinked">に</span></li><li class="clearfix"><span class="furigana">ふか</span><span class="unlinked">深い</span></li><li class="clearfix"><span class="furigana">きず</span><span class="unlinked">傷</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">お</span><span class="unlinked">負った</span></li><li class="clearfix"><span class="furigana">ことり</span><span class="unlinked">小鳥</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">み</span><span class="unlinked">見つけました</span></li>。</ul><span class="english" lang="en">I found a bird whose wing was severely damaged.</span></div></span></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">blade (of a fan, propeller, etc.)</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-restriction">Only applies to 羽根</span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">shuttlecock (in badminton)</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-restriction">Only applies to はね</span>, <span class="sense-tag tag-see_also">See also <a href="/search/%E3%82%B7%E3%83%A3%E3%83%88%E3%83%AB">シャトル</a></span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">5. </span><span class="meaning-meaning">shuttlecock (in hanetsuki)</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-restriction">Only applies to 羽根</span>, <span class="sense-tag tag-see_also">See also <a href="/search/%E7%BE%BD%E5%AD%90%20%E3%81%AF%E3%81%94">羽子 はご</a></span>, <span class="sense-tag tag-info">also written as 羽子</span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">6. </span><span class="meaning-meaning">arrow feathers</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-restriction">Only applies to 羽根</span>, <span class="sense-tag tag-see_also">See also <a href="/search/%E7%9F%A2%E7%BE%BD%20%E3%82%84%E3%81%B0%E3%81%AD">矢羽 やばね</a></span></span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">7. </span><span class="meaning-meaning">Flügel</span><span>&#8203;</span></div></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">羽根 【はね】</span>、<span class="break-unit">羽 【は】</span></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E7%BE%BD">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        覇
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+         <a class="concept_light-status_link" data-dropdown="links_drop_5185a483d5dda72954050f0e" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_5185a483d5dda72954050f0e" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E8%A6%87%20%23sentences">Sentence search for 覇</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E8%A6%87%20%23kanji">Kanji details for 覇</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=2750580&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">supremacy (over a nation); hegemony; domination; leadership</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-see_also">See also <a href="/search/%E8%A6%87%E3%82%92%E5%94%B1%E3%81%88%E3%82%8B">覇を唱える</a></span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">championship; victory</span><span>&#8203;</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E8%A6%87">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span></span>
+      </span>
+      <span class="text">
+        <span>ハ</span>
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+         <a class="concept_light-status_link" data-dropdown="links_drop_51859fb1d5dda7295402f350" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859fb1d5dda7295402f350" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E3%83%8F%20%23sentences">Sentence search for ハ</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=2029740&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">3rd (in a sequence denoted by the iroha system); c; iii</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-see_also">See also <a href="/search/%E3%81%84%E3%82%8D%E3%81%AF%E9%A0%86">いろは順</a></span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">C (note)</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-tag">Music</span>, <span class="sense-tag tag-info">used mainly in key names</span></span></div></div><div class="meaning-tags">Place</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">Wa</span><span>&#8203;</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E3%83%8F">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        破
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+         <a class="concept_light-status_link" data-dropdown="links_drop_5185a2f8d5dda7295404692e" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_5185a2f8d5dda7295404692e" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E7%A0%B4%20%23sentences">Sentence search for 破</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E7%A0%B4%20%23kanji">Kanji details for 破</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=2525520&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">middle section of a song (in gagaku or noh)</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-see_also">See also <a href="/search/%E5%BA%8F%E7%A0%B4%E6%80%A5">序破急</a></span></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E7%A0%B4">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">は</span>
+      </span>
+      <span class="text">
+        波
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+         <a class="concept_light-status_link" data-dropdown="links_drop_5e980e76d5dda71e34000010" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_5e980e76d5dda71e34000010" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E6%B3%A2%20%23sentences">Sentence search for 波</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="//jisho.org/search/%E6%B3%A2%20%23kanji">Kanji details for 波</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=2844141&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Counter</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">counter for waves (of a repeated occurrence)</span><span>&#8203;</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E6%B3%A2-3">Details ▸</a>
+</div>
+
+
+                
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span></span><span></span>
+      </span>
+      <span class="text">
+        <span>は</span><span>あ</span>
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag label">JLPT N3</span>  <a class="concept_light-status_link" data-dropdown="links_drop_51859ffad5dda72954031150" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859ffad5dda72954031150" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E3%81%AF%E3%81%82%20%23sentences">Sentence search for はあ</a></li><li><a href="/search/%E3%81%AF%E3%83%BC%20%23sentences">Sentence search for はー</a></li><li><a href="/search/%E3%81%AF%20%23sentences">Sentence search for は</a></li><li><a href="/search/%E3%81%AF%E3%81%81%20%23sentences">Sentence search for はぁ</a></li><li><a href="/search/%E3%81%AF%E3%81%82%E3%81%A3%20%23sentences">Sentence search for はあっ</a></li><li><a href="/search/%E3%83%8F%E3%82%A1%E3%83%BC%20%23sentences">Sentence search for ハァー</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=2069620&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">yes; indeed; well</span><span>&#8203;</span></div></div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">ha!</span><span>&#8203;</span></div></div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">what?; huh?</span><span>&#8203;</span></div></div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">sigh</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja">・・・<li class="clearfix"><span class="unlinked">はぁ</span></li>、<li class="clearfix"><span class="unlinked">どう</span></li><li class="clearfix"><span class="furigana">じょうきょう</span><span class="unlinked">状況</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">うけと</span><span class="unlinked">受け止めれば</span></li><li class="clearfix"><span class="unlinked">いい</span></li><li class="clearfix"><span class="unlinked">の</span></li><li class="clearfix"><span class="unlinked">かしら</span></li>。</ul><span class="english" lang="en">... Aaah, just how am I supposed to cope with this I wonder?</span></div></span></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">はー</span>、<span class="break-unit">は</span>、<span class="break-unit">はぁ</span>、<span class="break-unit">はあっ</span>、<span class="break-unit">ハァー</span></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E3%81%AF%E3%81%82">Details ▸</a>
+</div>
+
+
+          </div>
+
+          <div class="concepts">
+            
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はし</span><span></span>
+      </span>
+      <span class="text">
+        走<span>る</span>
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 5</a></span> <audio id="audio_走る:はしる" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/6698c8e0bcd1ecfd69cfca9841d630b3.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/6698c8e0bcd1ecfd69cfca9841d630b3.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_走る:はしる">Play audio</a> <a href="#" class="concept_light-status_link show_inflection_table" data-word="走る" data-pos="v5r" data-caption="Godan verb with \&#39;ru\&#39; ending">Show inflections</a> <a class="concept_light-status_link" data-dropdown="links_drop_51859badd5dda72954012ca2" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859badd5dda72954012ca2" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E8%B5%B0%E3%82%8B%20%23sentences">Sentence search for 走る</a></li><li><a href="/search/%E3%81%AF%E3%81%97%E3%82%8B%20%23sentences">Sentence search for はしる</a></li><li><a href="/search/%E5%A5%94%E3%82%8B%20%23sentences">Sentence search for 奔る</a></li><li><a href="/search/%E7%96%BE%E3%82%8B%20%23sentences">Sentence search for 疾る</a></li><li><a href="/search/%E8%B6%A8%E3%82%8B%20%23sentences">Sentence search for 趨る</a></li><li><a href="//jisho.org/search/%E8%B5%B0%20%23kanji">Kanji details for 走</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1402540&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">to run</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="unlinked">あの</span></li><li class="clearfix"><span class="furigana">はし</span><span class="unlinked">走ってる</span></li><li class="clearfix"><span class="furigana">しょうねん</span><span class="unlinked">少年</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="unlinked">ごらんなさい</span></li>。</ul><span class="english" lang="en">Look at that boy running.</span></div></span></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">to run (of a vehicle); to drive; to travel; to move; to sail</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="unlinked">この</span></li><li class="clearfix"><span class="furigana">れっしゃ</span><span class="unlinked">列車</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="furigana">とうきょう</span><span class="unlinked">東京</span></li><li class="clearfix"><span class="unlinked">と</span></li><li class="clearfix"><span class="furigana">おおさか</span><span class="unlinked">大阪</span></li><li class="clearfix"><span class="unlinked">の</span></li><li class="clearfix"><span class="furigana">あいだ</span><span class="unlinked">間</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">はし</span><span class="unlinked">走ります</span></li>。</ul><span class="english" lang="en">This train runs between Tokyo and Osaka.</span></div></span></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">to rush (to); to dash; to race</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">かれ</span><span class="unlinked">彼</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="unlinked">バス</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">めざ</span><span class="unlinked">目指して</span></li><li class="clearfix"><span class="furigana">けんめい</span><span class="unlinked">懸命に</span></li><li class="clearfix"><span class="furigana">はし</span><span class="unlinked">走った</span></li>。</ul><span class="english" lang="en">He made a dash for the bus.</span></div></span></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">to retreat; to flee; to defect (to)</span><span>&#8203;</span></div></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">5. </span><span class="meaning-meaning">to run away; to abscond; to elope</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-info">occ. 奔る</span></span></div></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">6. </span><span class="meaning-meaning">to flash (of lightning); to streak; to shoot (through; e.g. of pain); to run (through); to flare; to flit (e.g. across one&#39;s face); to spread quickly (of news, shock, etc.)</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">ふる</span><span class="unlinked">震え</span></li><li class="clearfix"><span class="unlinked">が</span></li><li class="clearfix"><span class="furigana">せすじ</span><span class="unlinked">背筋</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">はし</span><span class="unlinked">走った</span></li>。</ul><span class="english" lang="en">A shiver ran down my spine.</span></div></span></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">7. </span><span class="meaning-meaning">to go (e.g. bad, to extremes); to become; to turn; to take to (e.g. crime); to get carried away by (e.g. one&#39;s emotions); to get involved in; to get wrapped up in</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-info">as 〜に走る; occ. 趨る</span></span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">た</span><span class="unlinked">耐えられない</span></li><li class="clearfix"><span class="furigana">あっぱく</span><span class="unlinked">圧迫</span></li><li class="clearfix"><span class="unlinked">から</span></li><li class="clearfix"><span class="furigana">のが</span><span class="unlinked">逃れる</span></li><li class="clearfix"><span class="unlinked">ために</span></li><li class="clearfix"><span class="furigana">じさつ</span><span class="unlinked">自殺</span></li><li class="clearfix"><span class="unlinked">に</span></li><li class="clearfix"><span class="furigana">はし</span><span class="unlinked"><span class="hit">走る</span></span></li><li class="clearfix"><span class="furigana">こども</span><span class="unlinked">子供たち</span></li><li class="clearfix"><span class="unlinked">も</span></li><li class="clearfix"><span class="unlinked">いる</span></li>。</ul><span class="english" lang="en">Some children resort to suicide in order to escape from unbearable pressure.</span></div></span></div><div class="meaning-tags">Godan verb with &#39;ru&#39; ending, Intransitive verb</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">8. </span><span class="meaning-meaning">to run (through; of a road, street, etc.); to extend (e.g. of a mountain range); to stretch; to lie</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">みち</span><span class="unlinked">道</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="unlinked">くねくねと</span></li><li class="clearfix"><span class="furigana">はたけ</span><span class="unlinked">畑</span></li><li class="clearfix"><span class="unlinked">の</span></li><li class="clearfix"><span class="furigana">なか</span><span class="unlinked">中</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">はし</span><span class="unlinked">走っていた</span></li>。</ul><span class="english" lang="en">The road wound through the fields.</span></div></span></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">9. </span><span class="meaning-meaning">Running</span><span>&#8203;</span><span class="meaning-abstract">Running is a means of terrestrial locomotion allowing hum...<a href="//jisho.org/word/%E8%B5%B0%E3%82%8B"> Read more</a></span></div></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">奔る 【はしる】</span>、<span class="break-unit">疾る 【はしる】</span>、<span class="break-unit">趨る 【はしる】</span></span></div></div><div class="meaning-tags">Notes</div><div class="meaning-wrapper"><div class="meaning-definition meaning-representation_notes zero-padding"><span class="">奔る: Rarely-used kanji form. 疾る: Rarely-used kanji form. 趨る: Rarely-used kanji form.</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E8%B5%B0%E3%82%8B">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はな</span>
+      </span>
+      <span class="text">
+        花
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 4</a></span> <audio id="audio_花:はな" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/23f82344ffb652988eb06bfab7b2bd22.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/23f82344ffb652988eb06bfab7b2bd22.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_花:はな">Play audio</a> <a href="#" data-reveal-id="links_coll_51859a40d5dda72954008e70" data-reveal="true" class="concept_light-status_link">Show 10 collocations</a> <div id="links_coll_51859a40d5dda72954008e70" class="reveal-modal small" data-reveal="true"><ul class="no-bullet"><li><a href="/search/%E8%8A%B1%E3%82%92%E4%BE%9B%E3%81%88%E3%82%8B%20%23words">花を供える - to offer flowers (e.g. at grave)</a></li><li><a href="/search/%E8%8A%B1%E3%82%92%E5%82%B7%E3%82%81%E3%82%8B%20%23words">花を傷める - to spoil a flower</a></li><li><a href="/search/%E8%8A%B1%E3%82%92%E5%92%B2%E3%81%8B%E3%81%9B%E3%82%8B%20%23words">花を咲かせる - to make lively</a></li><li><a href="/search/%E8%8A%B1%E3%82%92%E5%BC%95%E3%81%8F%20%23words">花を引く - to play hana cards</a></li><li><a href="/search/%E8%8F%AF%E3%82%92%E6%8C%81%E3%81%9F%E3%81%9B%E3%82%8B%20%23words">華を持たせる - to let someone have the credit for (a success)</a></li><li><a href="/search/%E8%8A%B1%E3%82%92%E8%A6%B3%E3%82%8B%20%23words">花を観る - to view (cherry) blossoms</a></li><li><a href="/search/%E8%8A%B1%E3%82%92%E8%B4%88%E3%82%8B%20%23words">花を贈る - to give flowers as a gift</a></li><li><a href="/search/%E8%8A%B1%E3%81%AB%E6%B5%AE%E3%81%8B%E3%82%8C%E3%82%8B%20%23words">花に浮かれる - to be intoxicated with the blossoms</a></li><li><a href="/search/%E6%B1%9F%E6%88%B8%E3%81%AE%E8%8F%AF%20%23words">江戸の華 - widespread fires in Edo (often after earthquakes)</a></li><li><a href="/search/%E4%B8%A1%E6%89%8B%E3%81%AB%E8%8A%B1%20%23words">両手に花 - two blessings at once</a></li></ul></div> <a class="concept_light-status_link" data-dropdown="links_drop_51859a40d5dda72954008e70" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859a40d5dda72954008e70" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E8%8A%B1%20%23sentences">Sentence search for 花</a></li><li><a href="/search/%E3%81%AF%E3%81%AA%20%23sentences">Sentence search for はな</a></li><li><a href="/search/%E8%8F%AF%20%23sentences">Sentence search for 華</a></li><li><a href="//jisho.org/search/%E8%8A%B1%20%23kanji">Kanji details for 花</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1194500&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">flower; blossom; bloom; petal</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">わたし</span><span class="unlinked">私たち</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="furigana">うめ</span><span class="unlinked">梅</span></li><li class="clearfix"><span class="unlinked">の</span></li><li class="clearfix"><span class="furigana">はな</span><span class="unlinked"><span class="hit">花</span></span></li><li class="clearfix"><span class="unlinked">で</span></li><li class="clearfix"><span class="furigana">ゆうめい</span><span class="unlinked">有名な</span></li>水戸<li class="clearfix"><span class="furigana">こうえん</span><span class="unlinked">公園</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">みにい</span><span class="unlinked">見に行った</span></li>。</ul><span class="english" lang="en">We visited Mito Park, which is famous for its plum blossoms.</span></div></span></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">cherry blossom</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">beauty</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">blooming (esp. of cherry blossoms)</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">5. </span><span class="meaning-meaning">ikebana</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-see_also">See also <a href="/search/%E7%94%9F%E3%81%91%E8%8A%B1">生け花</a></span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">6. </span><span class="meaning-meaning">hanafuda</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-tag">Hanafuda</span>, <span class="sense-tag tag-tag">Abbreviation</span>, <span class="sense-tag tag-see_also">See also <a href="/search/%E8%8A%B1%E6%9C%AD">花札</a></span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">7. </span><span class="meaning-meaning">(the) best</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-see_also">See also <a href="/search/%E8%A8%80%E3%82%8F%E3%81%AC%E3%81%8C%E8%8A%B1">言わぬが花</a></span>, <span class="sense-tag tag-info">usu. as 〜が花</span></span></div></div><div class="meaning-tags">Noun which may take the genitive case particle &#39;no&#39;</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">8. </span><span class="meaning-meaning">glorious; lovely</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">9. </span><span class="meaning-meaning">Flower</span><span>&#8203;</span><span class="meaning-abstract">A flower, sometimes known as a bloom or blossom, is the r...<a href="//jisho.org/word/%E8%8A%B1"> Read more</a></span></div></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">華 【はな】</span></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E8%8A%B1">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はこ</span>
+      </span>
+      <span class="text">
+        箱
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 16</a></span> <audio id="audio_箱:はこ" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/1f5a4259709fe0d6786b0f007e7d908d.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/1f5a4259709fe0d6786b0f007e7d908d.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_箱:はこ">Play audio</a> <a class="concept_light-status_link" data-dropdown="links_drop_51859cefd5dda7295401b6fc" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859cefd5dda7295401b6fc" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E7%AE%B1%20%23sentences">Sentence search for 箱</a></li><li><a href="/search/%E3%81%AF%E3%81%93%20%23sentences">Sentence search for はこ</a></li><li><a href="/search/%E5%87%BD%20%23sentences">Sentence search for 函</a></li><li><a href="/search/%E5%8C%A3%20%23sentences">Sentence search for 匣</a></li><li><a href="/search/%E7%AD%A5%20%23sentences">Sentence search for 筥</a></li><li><a href="/search/%E7%AD%90%20%23sentences">Sentence search for 筐</a></li><li><a href="/search/%E5%87%BE%20%23sentences">Sentence search for 凾</a></li><li><a href="/search/%E3%83%8F%E3%82%B3%20%23sentences">Sentence search for ハコ</a></li><li><a href="//jisho.org/search/%E7%AE%B1%20%23kanji">Kanji details for 箱</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1585650&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">box; case; chest; package; pack; crate</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="unlinked">その</span></li><li class="clearfix"><span class="furigana">とって</span><span class="unlinked">取っ手</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="furigana">みぎ</span><span class="unlinked">右</span></li><li class="clearfix"><span class="unlinked">に</span></li><li class="clearfix"><span class="unlinked">ねじる</span></li><li class="clearfix"><span class="unlinked">と</span></li><li class="clearfix"><span class="furigana">はこ</span><span class="unlinked"><span class="hit">箱</span></span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="furigana">あ</span><span class="unlinked">開きます</span></li>。</ul><span class="english" lang="en">Twist that knob to the right and the box will open.</span></div></span></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">car (of a train, etc.)</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">shamisen case; shamisen</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">public building; community building</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-tag">Colloquial</span>, <span class="sense-tag tag-see_also">See also <a href="/search/%E7%AE%B1%E7%89%A9">箱物</a></span>, <span class="sense-tag tag-info">often written as ハコ</span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">5. </span><span class="meaning-meaning">man who carries a geisha&#39;s shamisen</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-tag">Archaic</span>, <span class="sense-tag tag-see_also">See also <a href="/search/%E7%AE%B1%E5%B1%8B">箱屋</a></span></span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">6. </span><span class="meaning-meaning">receptacle for human waste; feces (faeces)</span><span>&#8203;</span><span class="supplemental_info"><span class="sense-tag tag-tag">Archaic</span></span></div></div><div class="meaning-tags">Suffix, Counter</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">7. </span><span class="meaning-meaning">counter for boxes (or boxed objects)</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">8. </span><span class="meaning-meaning">Box</span><span>&#8203;</span><span class="meaning-abstract">Box describes a variety of containers and receptacles for...<a href="//jisho.org/word/%E7%AE%B1"> Read more</a></span></div></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">函 【はこ】</span>、<span class="break-unit">匣 【はこ】</span>、<span class="break-unit">筥 【はこ】</span>、<span class="break-unit">筐 【はこ】</span>、<span class="break-unit">凾 【はこ】</span>、<span class="break-unit">ハコ</span></span></div></div><div class="meaning-tags">Notes</div><div class="meaning-wrapper"><div class="meaning-definition meaning-representation_notes zero-padding"><span class="">函: Rarely-used kanji form. 匣: Rarely-used kanji form. 筥: Rarely-used kanji form. 筐: Rarely-used kanji form. 凾: Rarely-used kanji form.</span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E7%AE%B1">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はし</span>
+      </span>
+      <span class="text">
+        橋
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 13</a></span> <audio id="audio_橋:はし" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/d947370cf188735015fdae1993dacac6.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/d947370cf188735015fdae1993dacac6.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_橋:はし">Play audio</a> <a class="concept_light-status_link" data-dropdown="links_drop_51859a8bd5dda7295400aefa" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859a8bd5dda7295400aefa" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E6%A9%8B%20%23sentences">Sentence search for 橋</a></li><li><a href="/search/%E3%81%AF%E3%81%97%20%23sentences">Sentence search for はし</a></li><li><a href="//jisho.org/search/%E6%A9%8B%20%23kanji">Kanji details for 橋</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1237410&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">bridge</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">Bridge</span><span>&#8203;</span><span class="meaning-abstract">A bridge is a structure built to span physical obstacles ...<a href="//jisho.org/word/%E6%A9%8B"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E6%A9%8B">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はる</span>
+      </span>
+      <span class="text">
+        春
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 15</a></span> <audio id="audio_春:はる" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/6ca10f5821d2c4bc00cf8b083c9b1339.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/6ca10f5821d2c4bc00cf8b083c9b1339.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_春:はる">Play audio</a> <a href="#" data-reveal-id="links_coll_51859b40d5dda7295400fdd8" data-reveal="true" class="concept_light-status_link">Show 19 collocations</a> <div id="links_coll_51859b40d5dda7295400fdd8" class="reveal-modal small" data-reveal="true"><ul class="no-bullet"><li><a href="/search/%E6%98%A5%E3%82%92%E3%81%B2%E3%81%95%E3%81%90%20%23words">春をひさぐ - to engage in prostitution</a></li><li><a href="/search/%E6%98%A5%E3%82%92%E5%A3%B2%E3%82%8B%20%23words">春を売る - to become a prostitute</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E4%B8%83%E8%8D%89%20%23words">春の七草 - seven vernal flowers (Java water dropwort, shepherd&#39;s purse, Jersey cudweed, common chickweed, Japanese nipplewort, turnip, and daikon)</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E5%A4%95%20%23words">春の夕 - spring evening</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E5%A4%95%E3%81%B9%20%23words">春の夕べ - spring evening</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E5%AE%B5%20%23words">春の宵 - spring evening</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E5%B1%B1%20%23words">春の山 - misty mountain with blossoming buds and flowers as it appears in spring</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E5%B7%9D%20%23words">春の川 - river in springtime</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E6%97%A5%20%23words">春の日 - day of spring</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E6%9A%AE%20%23words">春の暮 - spring evening</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E6%B0%B4%20%23words">春の水 - lakes and torrents of spring (overflowing with water)</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E6%B5%B7%20%23words">春の海 - calm sea of spring</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E6%B9%8A%20%23words">春の湊 - end of spring</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E7%9B%AE%E8%A6%9A%E3%82%81%20%23words">春の目覚め - puberty</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E9%87%8E%20%23words">春の野 - calm fields of spring</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E9%9B%AA%20%23words">春の雪 - spring snow (usu. large snowflakes)</a></li><li><a href="/search/%E6%98%A5%E3%81%AE%E9%9B%B2%20%23words">春の雲 - cloud floating in a spring sky</a></li><li><a href="/search/%E3%82%A2%E3%83%A9%E3%83%96%E3%81%AE%E6%98%A5%20%23words">アラブの春 - Arab Spring (revolutionary wave in the Arab world, 2010-2011)</a></li><li><a href="/search/%E8%A6%8B%E3%81%88%E3%82%92%E3%81%AF%E3%82%8B%20%23words">見えをはる - to be pretentious</a></li></ul></div> <a class="concept_light-status_link" data-dropdown="links_drop_51859b40d5dda7295400fdd8" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859b40d5dda7295400fdd8" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E6%98%A5%20%23sentences">Sentence search for 春</a></li><li><a href="/search/%E3%81%AF%E3%82%8B%20%23sentences">Sentence search for はる</a></li><li><a href="//jisho.org/search/%E6%98%A5%20%23kanji">Kanji details for 春</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1341000&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun, Adverb (fukushi)</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">spring; springtime</span><span>&#8203;</span></div><span class="sentences zero-padding"><div class="sentence" style=""><ul class="japanese japanese_gothic clearfix" lang="ja"><li class="clearfix"><span class="furigana">おお</span><span class="unlinked">多く</span></li><li class="clearfix"><span class="unlinked">の</span></li><li class="clearfix"><span class="furigana">しょくぶつ</span><span class="unlinked">植物</span></li><li class="clearfix"><span class="unlinked">は</span></li><li class="clearfix"><span class="furigana">はる</span><span class="unlinked"><span class="hit">春</span></span></li><li class="clearfix"><span class="unlinked">に</span></li><li class="clearfix"><span class="furigana">はな</span><span class="unlinked">花</span></li><li class="clearfix"><span class="unlinked">を</span></li><li class="clearfix"><span class="unlinked">つける</span></li>。</ul><span class="english" lang="en">Many plants bloom in the spring.</span></div></span></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">New Year</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">3. </span><span class="meaning-meaning">prime (of life); height (of one&#39;s prosperity); heyday</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">4. </span><span class="meaning-meaning">adolescence; puberty</span><span>&#8203;</span></div></div><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">5. </span><span class="meaning-meaning">sexuality; sexual desire</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">6. </span><span class="meaning-meaning">Spring (season)</span><span>&#8203;</span><span class="meaning-abstract">Spring is one of the four temperate seasons, the transiti...<a href="//jisho.org/word/%E6%98%A5"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E6%98%A5">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はな</span>
+      </span>
+      <span class="text">
+        鼻
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 17</a></span> <audio id="audio_鼻:はな" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/391d6f9721dffdaaed39149353b52bd0.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/391d6f9721dffdaaed39149353b52bd0.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_鼻:はな">Play audio</a> <a href="#" data-reveal-id="links_coll_51859c41d5dda72954016c88" data-reveal="true" class="concept_light-status_link">Show 15 collocations</a> <div id="links_coll_51859c41d5dda72954016c88" class="reveal-modal small" data-reveal="true"><ul class="no-bullet"><li><a href="/search/%E9%BC%BB%E3%81%8C%E9%AB%98%E3%81%84%20%23words">鼻が高い - proud</a></li><li><a href="/search/%E9%BC%BB%E3%81%8C%E8%A9%B0%E3%81%BE%E3%82%8B%20%23words">鼻が詰まる - to have a stuffed nose</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E6%98%8E%E3%81%8B%E3%81%99%20%23words">鼻を明かす - to outwit</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E3%81%8B%E3%82%80%20%23words">鼻をかむ - to blow one&#39;s nose</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E3%81%99%E3%81%99%E3%82%8B%20%23words">鼻をすする - to sniffle</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E3%81%A4%E3%81%8F%20%23words">鼻をつく - to be smelly</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E3%81%A4%E3%81%BE%E3%82%80%20%23words">鼻をつまむ - to hold one&#39;s nose</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E9%B3%B4%E3%82%89%E3%81%99%20%23words">鼻を鳴らす - to coo at</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E5%88%BA%E3%81%99%20%23words">鼻を刺す - to have a pungent smell</a></li><li><a href="/search/%E9%BC%BB%E3%82%92%E6%8A%98%E3%82%8B%20%23words">鼻を折る - to humble someone</a></li><li><a href="/search/%E9%BC%BB%E3%81%AB%E3%81%8B%E3%81%91%E3%82%8B%20%23words">鼻にかける - to be full of pride</a></li><li><a href="/search/%E9%BC%BB%E3%81%AB%E3%81%A4%E3%81%8F%20%23words">鼻につく - to be cloying</a></li><li><a href="/search/%E9%BC%BB%E3%81%AE%E9%AB%98%E3%81%84%20%23words">鼻の高い - proud</a></li><li><a href="/search/%E9%BC%BB%E3%81%AE%E5%85%88%20%23words">鼻の先 - in front of your nose</a></li><li><a href="/search/%E9%BC%BB%E3%81%AE%E9%A0%AD%20%23words">鼻の頭 - tip of one&#39;s nose</a></li></ul></div> <a class="concept_light-status_link" data-dropdown="links_drop_51859c41d5dda72954016c88" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859c41d5dda72954016c88" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E9%BC%BB%20%23sentences">Sentence search for 鼻</a></li><li><a href="/search/%E3%81%AF%E3%81%AA%20%23sentences">Sentence search for はな</a></li><li><a href="//jisho.org/search/%E9%BC%BB%20%23kanji">Kanji details for 鼻</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1486720&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">nose</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">Nose</span><span>&#8203;</span><span class="meaning-abstract">Anatomically, a nose is a protuberance in vertebrates tha...<a href="//jisho.org/word/%E9%BC%BB"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E9%BC%BB">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はし</span>
+      </span>
+      <span class="text">
+        箸
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 47</a></span>  <a href="#" data-reveal-id="links_coll_51859c2ed5dda729540164b6" data-reveal="true" class="concept_light-status_link">Show 2 collocations</a> <div id="links_coll_51859c2ed5dda729540164b6" class="reveal-modal small" data-reveal="true"><ul class="no-bullet"><li><a href="/search/%E7%AE%B8%E3%81%8C%E9%80%B2%E3%82%80%20%23words">箸が進む - to eat a lot</a></li><li><a href="/search/%E7%AE%B8%E3%82%92%E5%8F%96%E3%82%8B%20%23words">箸を取る - to take up one&#39;s chopsticks (to begin a meal)</a></li></ul></div> <a class="concept_light-status_link" data-dropdown="links_drop_51859c2ed5dda729540164b6" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859c2ed5dda729540164b6" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E7%AE%B8%20%23sentences">Sentence search for 箸</a></li><li><a href="/search/%E3%81%AF%E3%81%97%20%23sentences">Sentence search for はし</a></li><li><a href="//jisho.org/search/%E7%AE%B8%20%23kanji">Kanji details for 箸</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1476410&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">chopsticks</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">Chopsticks</span><span>&#8203;</span><span class="meaning-abstract">Chopsticks are short, frequently tapered sticks used in p...<a href="//jisho.org/word/%E7%AE%B8"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E7%AE%B8">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-2-up kanji">はい</span><span class="kanji-2-up kanji">ざら</span>
+      </span>
+      <span class="text">
+        灰皿
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 33</a></span> <audio id="audio_灰皿:はいざら" preload="none"><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio/007831de581768a2f842eff1f6947d4b.mp3" type="audio/mpeg"></source><source src="//d1vjc5dkcd3yh2.cloudfront.net/audio_ogg/007831de581768a2f842eff1f6947d4b.ogg" type="audio/ogg"></source></audio><a class="concept_audio concept_light-status_link" data-id="audio_灰皿:はいざら">Play audio</a> <a class="concept_light-status_link" data-dropdown="links_drop_51859a4dd5dda7295400941e" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859a4dd5dda7295400941e" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E7%81%B0%E7%9A%BF%20%23sentences">Sentence search for 灰皿</a></li><li><a href="/search/%E3%81%AF%E3%81%84%E3%81%96%E3%82%89%20%23sentences">Sentence search for はいざら</a></li><li><a href="//jisho.org/search/%E7%81%B0%E7%9A%BF%20%23kanji">Kanji details for 灰 and 皿</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1201940&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">ashtray</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">Ashtray</span><span>&#8203;</span><span class="meaning-abstract">An ashtray is a receptacle for ash and butts from cigaret...<a href="//jisho.org/word/%E7%81%B0%E7%9A%BF"> Read more</a></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E7%81%B0%E7%9A%BF">Details ▸</a>
+</div>
+
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper  columns zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      <div class="concept_light-representation">      <span class="furigana">
+        <span class="kanji-1-up kanji">か</span><span class="kanji-2-up kanji">びん</span>
+      </span>
+      <span class="text">
+        花瓶
+      </span>
+</div>
+    </div>
+
+      <div class="concept_light-status">
+        <span class="concept_light-tag concept_light-common success label">Common word</span> <span class="concept_light-tag label">JLPT N5</span> <span class="concept_light-tag label"><a href='http://wanikani.com/'>Wanikani level 51</a></span>  <a class="concept_light-status_link" data-dropdown="links_drop_51859a41d5dda72954008eba" data-options="is_hover:true; hover_timeout:300" href="#">Links</a><ul class="f-dropdown" id="links_drop_51859a41d5dda72954008eba" data-dropdown-content="data-dropdown-content"><li><a href="/search/%E8%8A%B1%E7%93%B6%20%23sentences">Sentence search for 花瓶</a></li><li><a href="/search/%E3%81%8B%E3%81%B3%E3%82%93%20%23sentences">Sentence search for かびん</a></li><li><a href="/search/%E3%81%AF%E3%81%AA%E3%81%8C%E3%82%81%20%23sentences">Sentence search for はながめ</a></li><li><a href="/search/%E3%81%8B%E3%81%B8%E3%81%84%20%23sentences">Sentence search for かへい</a></li><li><a href="//jisho.org/search/%E8%8A%B1%E7%93%B6%20%23kanji">Kanji details for 花 and 瓶</a></li><li><a href="https://www.edrdg.org/jmwsgi/edform.py?svc=jmdict&amp;sid=&amp;q=1194870&amp;a=2">Edit in JMdict</a></li></ul>
+      </div>
+  </div>
+
+
+  <div class="concept_light-meanings medium-9 columns">
+    <div class='meanings-wrapper'><div class="meaning-tags">Noun</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">(flower) vase</span><span>&#8203;</span></div></div><div class="meaning-tags">Wikipedia definition</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">2. </span><span class="meaning-meaning">Vase</span><span>&#8203;</span><span class="meaning-abstract">A vase is an open container, often used to hold cut flowe...<a href="//jisho.org/word/%E8%8A%B1%E7%93%B6"> Read more</a></span></div></div><div class="meaning-tags">Other forms</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-meaning"><span class="break-unit">花瓶 【はながめ】</span>、<span class="break-unit">花瓶 【かへい】</span></span></div></div></div>
+  </div>
+
+
+    <a class="light-details_link" href="//jisho.org/word/%E8%8A%B1%E7%93%B6">Details ▸</a>
+</div>
+
+
+            
+
+
+  <a class="more" href="//jisho.org/search/ha%20%23words?page=2">More <span class='accesskey'>W</span>ords &gt;</a>
+
+          </div>
+      </div>
+
+    <div id="secondary" class="large-4 columns search-secondary_column">
+        <div class="notes_block">
+          <div class="notes clearfix">
+            <h4>More reading</h4>
+            <div class="note entry clearfix">
+  <div>
+  
+    <span>
+      <ul>
+  <li>
+    Tofugu: <a href="http://www.tofugu.com/japanese/japanese-particles-cheatsheet/">Japanese Particles Cheatsheet</a>
+  </li>
+  <li>
+    Tae Kim's Guide to Learning Japanese: <a href="http://www.guidetojapanese.org/learn/grammar/particlesintro">Introduction to Particles</a>, <a href="http://www.guidetojapanese.org/learn/grammar/verbparticles">Particles used with Verbs</a>, <a href="http://www.guidetojapanese.org/learn/grammar/nounparticles">Noun-related Particles</a>
+  </li>
+</ul>
+
+
+    </span>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+          <div class="kanji_light_block">
+            <h4>Kanji<span class="result_count"> — 71 found</span></h4>
+              <div class="entry kanji_light clearfix">
+  <div class="kanji_light_content">
+    <div class="debug">
+      0.7153502235469449<br>
+    </div>
+
+    <div class="info clearfix">
+        <span class="strokes">9 strokes.</span>
+
+        JLPT N1.
+
+        Jōyō kanji, taught in grade 6.
+    </div>
+
+    <div class="literal_block">
+      <span class="character literal japanese_gothic" lang="ja"><a href="//jisho.org/search/%E6%B4%BE%20%23kanji">派</a></span>
+    </div>
+
+      <div class="meanings english sense">
+            <span>faction, </span>
+            <span>group, </span>
+            <span>party, </span>
+            <span>clique, </span>
+            <span>sect, </span>
+            <span>school</span>
+      </div>
+
+
+        <div class="on readings">
+          <span class="type">On: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E6%B4%BE%20%E3%81%AF">ハ</a></span>
+        </div>
+  </div>
+
+  <a class="light-details_link" href="//jisho.org/search/%E6%B4%BE%20%23kanji">Details ▸</a>
+</div>
+<div class="entry kanji_light clearfix">
+  <div class="kanji_light_content">
+    <div class="debug">
+      1.8058231252953363<br>
+    </div>
+
+    <div class="info clearfix">
+        <span class="strokes">12 strokes.</span>
+
+        JLPT N3.
+
+        Jōyō kanji, taught in grade 3.
+    </div>
+
+    <div class="literal_block">
+      <span class="character literal japanese_gothic" lang="ja"><a href="//jisho.org/search/%E8%91%89%20%23kanji">葉</a></span>
+    </div>
+
+      <div class="meanings english sense">
+            <span>leaf, </span>
+            <span>plane, </span>
+            <span>lobe, </span>
+            <span>needle, </span>
+            <span>blade, </span>
+            <span>spear, </span>
+            <span>counter for flat things, </span>
+            <span>fragment, </span>
+            <span>piece</span>
+      </div>
+
+        <div class="kun readings">
+          <span class="type">Kun: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E8%91%89%20%E3%81%AF">は</a></span>
+        </div>
+
+        <div class="on readings">
+          <span class="type">On: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E8%91%89%20%E3%82%88%E3%81%86">ヨウ</a></span>
+        </div>
+  </div>
+
+  <a class="light-details_link" href="//jisho.org/search/%E8%91%89%20%23kanji">Details ▸</a>
+</div>
+<div class="entry kanji_light clearfix">
+  <div class="kanji_light_content">
+    <div class="debug">
+      2.175129948020792<br>
+    </div>
+
+    <div class="info clearfix">
+        <span class="strokes">6 strokes.</span>
+
+        JLPT N2.
+
+        Jōyō kanji, taught in grade 2.
+    </div>
+
+    <div class="literal_block">
+      <span class="character literal japanese_gothic" lang="ja"><a href="//jisho.org/search/%E7%BE%BD%20%23kanji">羽</a></span>
+    </div>
+
+      <div class="meanings english sense">
+            <span>feathers, </span>
+            <span>counter for birds, rabbits</span>
+      </div>
+
+        <div class="kun readings">
+          <span class="type">Kun: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E7%BE%BD%20%E3%81%AF">は</a>、 </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E7%BE%BD%20%E3%82%8F">わ</a>、 </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E7%BE%BD%20%E3%81%AF%E3%81%AD">はね</a></span>
+        </div>
+
+        <div class="on readings">
+          <span class="type">On: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E7%BE%BD%20%E3%81%86">ウ</a></span>
+        </div>
+  </div>
+
+  <a class="light-details_link" href="//jisho.org/search/%E7%BE%BD%20%23kanji">Details ▸</a>
+</div>
+<div class="entry kanji_light clearfix">
+  <div class="kanji_light_content">
+    <div class="debug">
+      3.2277997891752395<br>
+    </div>
+
+    <div class="info clearfix">
+        <span class="strokes">8 strokes.</span>
+
+        JLPT N2.
+
+        Jōyō kanji, taught in grade 3.
+    </div>
+
+    <div class="literal_block">
+      <span class="character literal japanese_gothic" lang="ja"><a href="//jisho.org/search/%E6%B3%A2%20%23kanji">波</a></span>
+    </div>
+
+      <div class="meanings english sense">
+            <span>waves, </span>
+            <span>billows, </span>
+            <span>Poland</span>
+      </div>
+
+        <div class="kun readings">
+          <span class="type">Kun: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E6%B3%A2%20%E3%81%AA%E3%81%BF">なみ</a></span>
+        </div>
+
+        <div class="on readings">
+          <span class="type">On: </span>
+            <span class="japanese_gothic "><a href="//jisho.org/search/%E6%B3%A2%20%E3%81%AF">ハ</a></span>
+        </div>
+  </div>
+
+  <a class="light-details_link" href="//jisho.org/search/%E6%B3%A2%20%23kanji">Details ▸</a>
+</div>
+
+            
+
+
+  <a class="more" href="//jisho.org/search/ha%20%23kanji">More <span class='accesskey'>K</span>anji &gt;</a>
+
+          </div>
+
+
+        <div class="sentences_block">
+          <h4>Sentences<span class="result_count"> — 14 found</span></h4>
+          <ul class="sentences">
+            <li class="entry sentence clearfix">
+  <div class="debug">74142</div>
+
+  <div class="sentence_content">
+    <ul class="japanese_sentence japanese japanese_gothic clearfix" lang="ja">
+      <li class="clearfix"><span class="unlinked">わははは</span></li>！<li class="clearfix"><span class="unlinked">そりゃ</span></li><li class="clearfix"><span class="furigana">けっさく</span><span class="unlinked">傑作</span></li><li class="clearfix"><span class="unlinked">だ</span></li>！
+    </ul>
+    <div class="english_sentence clearfix">
+      <span class="english">A-ha-ha-ha! What a blunder!</span>
+          <span class="inline_copyright">— <a href="http://tatoeba.org/eng/sentences/show/74142">Tatoeba</a></span>
+    </div>
+  </div>
+
+    <a class="light-details_link" href="//jisho.org/sentences/51866352d5dda7e9810000bb">Details ▸</a>
+</li>
+
+          </ul>
+          
+
+
+  <a class="more" href="//jisho.org/search/ha%20%23sentences">More <span class='accesskey'>S</span>entences &gt;</a>
+
+        </div>
+
+        <div class="names_block">
+          <div class="names">
+            <h4>Names<span class="result_count"> — 19379 found</span></h4>
+            
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      ハジャン
+    </div>
+  </div>
+
+  <div class="concept_light-meanings">
+    <div class='meanings-wrapper'><div class="meaning-tags">Place</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">Ha Giang; Ha-giang (Vietnam)</span><span>&#8203;</span></div></div></div>
+  </div>
+</div>
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      ハチン
+    </div>
+  </div>
+
+  <div class="concept_light-meanings">
+    <div class='meanings-wrapper'><div class="meaning-tags">Place</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">Ha Tinh (Vietnam)</span><span>&#8203;</span></div></div></div>
+  </div>
+</div>
+
+
+<div class="concept_light clearfix">
+  <div class="concept_light-wrapper zero-padding">
+    <div class="concept_light-readings japanese japanese_gothic" lang="ja">
+      ミンハ
+    </div>
+  </div>
+
+  <div class="concept_light-meanings">
+    <div class='meanings-wrapper'><div class="meaning-tags">Unclassified name</div><div class="meaning-wrapper"><div class="meaning-definition zero-padding"><span class="meaning-definition-section_divider">1. </span><span class="meaning-meaning">ha</span><span>&#8203;</span></div></div></div>
+  </div>
+</div>
+
+            
+
+
+  <a class="more" href="//jisho.org/search/ha%20%23names">More <span class='accesskey'>N</span>ames &gt;</a>
+
+          </div>
+        </div>
+
+        
+
+        
+<aside id="other_dictionaries">
+  <h4>Other Dictionaries</h4>
+  <p class="minor-text">You can also try these fine sites.</p>
+  <ul class="no-bullet">
+      <li><a href="http://eow.alc.co.jp/search?q=%E3%81%AF&amp;ref=sa">Search ALC for は</a></li>
+      <li><a href="http://dictionary.goo.ne.jp/srch/all/%E3%81%AF/m0u/">Search Goo Jisho for は</a></li>
+      <li><a href="https://www.google.com/search?q=%E3%81%AF">Search Google.com for は</a></li>
+      <li><a href="https://www.google.jp/search?q=%E3%81%AF">Search Google.jp for は</a></li>
+      <li><a href="https://kotobank.jp/gs/?q=%E3%81%AF">Search Kotobank for は</a></li>
+      <li><a href="https://www.weblio.jp/content/%E3%81%AF">Search Weblio for は</a></li>
+  </ul>
+</aside>
+
+</div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+      <footer class="clearfix">
+  <div class="ornament">
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <p>
+        Jisho.org is lovingly crafted by <a href="//jisho.org/about">Kim, Miwa and Andrew</a>.
+        You can reach us on Mastodon at <a href="https://mastodon.social/@jisho">@jisho@mastodon.social</a> or by e-mail to <a href="mailto:jisho.org@gmail.com">jisho.org@gmail.com</a>. Before you contact us, please read our list of <a href="//jisho.org/faq">frequently asked questions</a>. Please note that we read all messages we get, but it can take a long time for us to reply as Jisho is a side project and we do not have very much time to devote to it.
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-4 columns">
+      <p>
+        This site uses the <a href="http://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project">JMdict</a>, <a href="http://www.edrdg.org/wiki/index.php/KANJIDIC_Project">Kanjidic2</a>, <a href="http://www.edrdg.org/enamdict/enamdict_doc.html">JMnedict</a> and <a href="http://www.edrdg.org/krad/kradinf.html">Radkfile</a> dictionary files. These files are the property of the <a href="http://www.edrdg.org/"> Electronic Dictionary Research and Development Group</a>, and are used in conformance with the Group's <a href="http://www.edrdg.org/edrdg/licence.html">licence</a>.
+      </p>
+      <p>
+        Example sentences come from the <a href="http://tatoeba.org/">Tatoeba</a> project and are licensed under <a href="http://creativecommons.org/licenses/by/2.0/fr/">Creative Commons CC-BY</a>. And from the <a href="http://www.tufs.ac.jp/ts/personal/SUZUKI_Tomomi/jreibun/index-jreibun.html">Jreibun</a> project.
+      </p>
+      <p>
+        Audio files are graciously provided by <a href="http://www.tofugu.com">Tofugu’s</a> excellent kanji learning site <a href="http://www.wanikani.com">WaniKani</a>.
+      </p>
+    </div>
+    <div class="small-12 large-4 columns">
+      <p>
+        The SKIP (System of Kanji Indexing by Patterns) system for ordering kanji was developed by Jack Halpern (Kanji Dictionary Publishing Society at <a href="http://www.kanji.org/">http://www.kanji.org/</a>), and is used with his permission. The license is <a href="http://www.kanji.org/kanji/dictionaries/skip_permission.htm">Creative Commons Attribution-ShareAlike 4.0 International</a>.
+      </p>
+    </div>
+    <div class="small-12 large-4 columns">
+      <p>
+        Kanji stroke diagrams are based on data from <a href="http://kanjivg.tagaini.net" title="Welcome - KanjiVG">KanjiVG</a>, which is copyright &copy; 2009-2012 Ulrich Apel and released under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0</a> license.
+      </p>
+      <p>
+        Wikipedia data comes from the <a href="http://wiki.dbpedia.org/about">DBpedia</a> project and is dual licensed under <a href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike 3.0</a> and <a href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License">GNU Free Documentation License</a>.
+      </p>
+      <p>
+        JLPT data comes from <a href="http://www.tanos.co.uk/contact/">Jonathan Waller‘s</a> <a href="http://www.tanos.co.uk/jlpt/">JLPT Resources</a> page.
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" charset="utf-8">
+    var currentUser = null;
+
+</script>
+
+<script src="https://assets.jisho.org/assets/application-fe07b0b8ade93cbea5bf2f513ab5d59be67f0c111905dbeabfb88aa48c81e88e.js"></script>
+
+  <style type="text/css" media="screen">
+    .debug { display: none; }
+  </style>
+
+
+
+    <script>
+
+  (function() {
+
+   Namespace('Jisho.KeyEvents', {});
+     var body = $(document.body);
+
+     function applyBodyClass(keyEvent, on) {
+       body.toggleClass(getClassForEvent(keyEvent), on !== (keyEvent.type == 'display'));
+     }
+
+     function getClassForEvent(keyEvent) {
+       return (keyEvent.type == 'display' ? 'hide' : 'highlight') + '_' + keyEvent.name;
+     }
+
+     body.keydown(function(e) {
+       var events = Jisho.KeyEvents[e.which];
+       if(events) {
+         events.each(function(keyEvent) {
+           if(keyEvent.active) return;
+           keyEvent.active = true;
+           if(keyEvent.phase == 'toggle') {
+             body.toggleClass(getClassForEvent(keyEvent));
+           } else {
+             applyBodyClass(keyEvent, true);
+           }
+         });
+       }
+     });
+
+     body.keyup(function(e) {
+       var events = Jisho.KeyEvents[e.which];
+       if(events) {
+         events.each(function(keyEvent) {
+           keyEvent.active = false;
+           if(keyEvent.phase !== 'toggle') {
+             applyBodyClass(keyEvent, false);
+           }
+         });
+       }
+     });
+
+
+  })();
+
+</script>
+
+    <div id="loginHelpDialog" class="reveal-modal" data-reveal aria-labelledby="Login" aria-hidden="true" role="dialog">
+  <div class="row">
+    <div class="login_help_dialog-new_user columns small-12 medium-6">
+      <h3>New to Jisho?</h3>
+
+      <a href="javascript:void(0)" class="js-login-help-sign-up">Click here to sign up!</a>
+    </div>
+
+    <div class="login_help_dialog-existing_user columns small-12 medium-6">
+      <h3>Have an account?</h3>
+
+      <p>We recently switched to a new login system. Please enter the email you registered with and follow the instructions.</p>
+
+      <form class="js-login-help-log-in" method="get" accept-charset="utf-8">
+        <p><input type="text" name="email" /></p>
+        <p><input type="submit" value="Log in" class="button"></p>
+      </form>
+    </div>
+  </div>
+
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+  </body>
+</html>
