@@ -1942,5 +1942,197 @@
         "kanji": "時刻表",
         "meaning": "timetable; schedule",
         "group": "Noun"
+    },
+    "oboemasu": {
+        "hiragana": "おぼ",
+        "kanji": "覚える",
+        "meaning": "to memorize; to memorise; to commit to memory; to learn by heart; to bear in mind; to remember",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "ushinau": {
+        "hiragana": "うしな",
+        "kanji": "失う",
+        "meaning": "to lose",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "wasuremasu": {
+        "hiragana": "わす",
+        "kanji": "忘れる",
+        "meaning": "to forget; to leave carelessly; to be forgetful of; to forget about; to forget (an article)",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "haraimasu": {
+        "hiragana": "はら",
+        "kanji": "払う",
+        "meaning": "to pay (e.g. money, bill)",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "kaeshimasu": {
+        "hiragana": "かえ",
+        "kanji": "返す",
+        "meaning": "to return (something); to restore; to put back",
+        "group": "Godan verb with 'su' ending, Transitive verb"
+    },
+    "dekakemasu": {
+        "hiragana": "で",
+        "kanji": "出かける",
+        "meaning": "to go out (e.g. on an excursion or outing); to leave; to depart; to start; to set out",
+        "group": "Ichidan verb, Intransitive verb"
+    },
+    "nugimasu": {
+        "hiragana": "ぬ",
+        "kanji": "脱ぐ",
+        "meaning": "to take off (clothes, shoes, etc.); to undress",
+        "group": "Godan verb with 'gu' ending, Transitive verb"
+    },
+    "motteikimasu": {
+        "hiragana": "も",
+        "kanji": "持つ",
+        "meaning": "to hold (in one's hand); to take; to carry",
+        "group": "Godan verb with 'tsu' ending, Transitive verb"
+    },
+    "mottekimasu": {
+        "hiragana": "も",
+        "kanji": "持つ",
+        "meaning": "to hold (in one's hand); to take; to carry",
+        "group": "Godan verb with 'tsu' ending, Transitive verb"
+    },
+    "shinpai": {
+        "hiragana": "しんぱい",
+        "kanji": "心配",
+        "meaning": "worry; concern; anxiety; uneasiness; fear",
+        "group": "Noun, Suru verb, Transitive verb, Na-adjective (keiyodoshi)"
+    },
+    "zangyou": {
+        "hiragana": "ざんぎょう",
+        "kanji": "残業",
+        "meaning": "overtime (work)",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "shucchou": {
+        "hiragana": "しゅっちょう",
+        "kanji": "出張",
+        "meaning": "business trip; official trip",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "daisetsu": {
+        "hiragana": "",
+        "kanji": "大雪山国立公園",
+        "meaning": "Daisetsuzan National Park",
+        "group": "Wikipedia definition"
+    },
+    "taisetsu": {
+        "hiragana": "たいせつ",
+        "kanji": "大切",
+        "meaning": "important; significant; serious; crucial",
+        "group": "Na-adjective (keiyodoshi)"
+    },
+    "daijyoubu": {
+        "hiragana": "だいじょうぶ",
+        "kanji": "大丈夫",
+        "meaning": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay",
+        "group": "Na-adjective (keiyodoshi)"
+    },
+    "abunai": {
+        "hiragana": "あぶ",
+        "kanji": "危ない",
+        "meaning": "dangerous; risky; hazardous; perilous; precarious",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "mondai": {
+        "hiragana": "もんだい",
+        "kanji": "問題",
+        "meaning": "question (e.g. on a test); problem",
+        "group": "Noun"
+    },
+    "kotae": {
+        "hiragana": "こた",
+        "kanji": "答え",
+        "meaning": "answer; reply; response",
+        "group": "Noun"
+    },
+    "kinen": {
+        "hiragana": "きねん",
+        "kanji": "記念",
+        "meaning": "commemoration; celebration; remembrance; memory; honoring the memory of",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "kenkou": {
+        "hiragana": "けんこう",
+        "kanji": "健康",
+        "meaning": "health",
+        "group": "Noun"
+    },
+    "kaze": {
+        "hiragana": "かぜ",
+        "kanji": "風邪",
+        "meaning": "(common) cold; influenza; flu; ague; inflammatory respiratory system illness (in general)",
+        "group": "Noun"
+    },
+    "netsu": {
+        "hiragana": "ねつ",
+        "kanji": "熱",
+        "meaning": "heat",
+        "group": "Noun"
+    },
+    "byouki": {
+        "hiragana": "びょうき",
+        "kanji": "病気",
+        "meaning": "illness (usu. excluding minor ailments, e.g. common cold); disease; sickness",
+        "group": "Noun"
+    },
+    "kusuri": {
+        "hiragana": "くすり",
+        "kanji": "薬",
+        "meaning": "medicine; pharmaceuticals; (legal) drugs; pill; ointment; salve",
+        "group": "Noun"
+    },
+    "furu": {
+        "hiragana": "ふ",
+        "kanji": "降る",
+        "meaning": "to fall (of rain, snow, ash, etc.); to come down",
+        "group": "Godan verb with 'ru' ending, Intransitive verb"
+    },
+    "uwagi": {
+        "hiragana": "うわぎ",
+        "kanji": "上着",
+        "meaning": "coat; jacket; outerwear",
+        "group": "Noun"
+    },
+    "shitagi": {
+        "hiragana": "したぎ",
+        "kanji": "下着",
+        "meaning": "underwear; undergarment; underclothes; lingerie",
+        "group": "Noun"
+    },
+    "sensei": {
+        "hiragana": "せんせい",
+        "kanji": "先生",
+        "meaning": "teacher; instructor; master",
+        "group": "Noun"
+    },
+    "desukara": {
+        "hiragana": "",
+        "kanji": "ですから",
+        "meaning": "so; therefore; accordingly; consequently; on those grounds; that is why; for that reason",
+        "group": "Conjunction"
+    },
+    "itai": {
+        "hiragana": "いた",
+        "kanji": "痛い",
+        "meaning": "painful; sore",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "nodo": {
+        "hiragana": "のど",
+        "kanji": "喉",
+        "meaning": "throat",
+        "group": "Noun"
+    },
+    "odaijini": {
+        "hiragana": "だいじ",
+        "kanji": "お大事に",
+        "meaning": "take care of yourself; get well soon",
+        "group": "Expressions (phrases, clauses, etc.)"
     }
 }
