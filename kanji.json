@@ -1,0 +1,908 @@
+{
+    "doboku": {
+        "hiragana": "どぼく",
+        "kanji": "土木",
+        "meaning": "engineering works; civil engineering; public works",
+        "group": "Noun"
+    },
+    "nichiyoubi": {
+        "hiragana": "にちようび",
+        "kanji": "日曜日",
+        "meaning": "Sunday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "kayoubi": {
+        "hiragana": "かようび",
+        "kanji": "火曜日",
+        "meaning": "Tuesday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "getsuyoubi": {
+        "hiragana": "げつようび",
+        "kanji": "月曜日",
+        "meaning": "Monday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "suiyoubi": {
+        "hiragana": "すいようび",
+        "kanji": "水曜日",
+        "meaning": "Wednesday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "mokuyoubi": {
+        "hiragana": "もくようび",
+        "kanji": "木曜日",
+        "meaning": "Thursday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "kinyoubi": {
+        "hiragana": "きんようび",
+        "kanji": "金曜日",
+        "meaning": "Friday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "doyoubi": {
+        "hiragana": "どようび",
+        "kanji": "土曜日",
+        "meaning": "Saturday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "jikan": {
+        "hiragana": "じかん",
+        "kanji": "時間",
+        "meaning": "time",
+        "group": "Noun"
+    },
+    "hana": {
+        "hiragana": "はな",
+        "kanji": "花",
+        "meaning": "flower; blossom; bloom; petal",
+        "group": "Noun"
+    },
+    "hanabi": {
+        "hiragana": "はなび",
+        "kanji": "花火",
+        "meaning": "fireworks",
+        "group": "Noun"
+    },
+    "kabin": {
+        "hiragana": "かびん",
+        "kanji": "花瓶",
+        "meaning": "(flower) vase",
+        "group": "Noun"
+    },
+    "cha": {
+        "hiragana": "ちゃ",
+        "kanji": "茶",
+        "meaning": "tea",
+        "group": "Noun"
+    },
+    "niku": {
+        "hiragana": "にく",
+        "kanji": "肉",
+        "meaning": "flesh",
+        "group": "Noun"
+    },
+    "kissaten": {
+        "hiragana": "きっさてん",
+        "kanji": "喫茶店",
+        "meaning": "coffee shop; tearoom; coffee lounge; coffeehouse; cafe",
+        "group": "Noun"
+    },
+    "nihoncha": {
+        "hiragana": "にほんちゃ",
+        "kanji": "日本茶",
+        "meaning": "Japanese tea",
+        "group": "Noun"
+    },
+    "koucha": {
+        "hiragana": "こうちゃ",
+        "kanji": "紅茶",
+        "meaning": "black tea",
+        "group": "Noun"
+    },
+    "gyuuniku": {
+        "hiragana": "ぎゅうにく",
+        "kanji": "牛肉",
+        "meaning": "beef",
+        "group": "Noun"
+    },
+    "toriniku": {
+        "hiragana": "とりにく",
+        "kanji": "鶏肉",
+        "meaning": "chicken meat",
+        "group": "Noun"
+    },
+    "nikutai": {
+        "hiragana": "にくたい",
+        "kanji": "肉体",
+        "meaning": "the body; the flesh; the outer man; one's physique",
+        "group": "Noun"
+    },
+    "bun": {
+        "hiragana": "ぶん",
+        "kanji": "分",
+        "meaning": "part; portion; share",
+        "group": "Noun, Noun, used as a suffix"
+    },
+    "fumi": {
+        "hiragana": "ふみ",
+        "kanji": "文",
+        "meaning": "letter; note; mail",
+        "group": "Noun"
+    },
+    "bungaku": {
+        "hiragana": "ぶんがく",
+        "kanji": "文学",
+        "meaning": "literature",
+        "group": "Noun"
+    },
+    "monbushou": {
+        "hiragana": "もんぶしょう",
+        "kanji": "文部省",
+        "meaning": "Ministry of Education, Science and Culture (1871-2001)",
+        "group": "Noun"
+    },
+    "ji": {
+        "hiragana": "じ",
+        "kanji": "字",
+        "meaning": "character (esp. kanji); letter; written text",
+        "group": "Noun"
+    },
+    "monji": {
+        "hiragana": "もじ",
+        "kanji": "文字",
+        "meaning": "letter (of an alphabet); character",
+        "group": "Noun"
+    },
+    "kanji": {
+        "hiragana": "かんじ",
+        "kanji": "漢字",
+        "meaning": "kanji; Chinese character",
+        "group": "Noun"
+    },
+    "mono": {
+        "hiragana": "もの",
+        "kanji": "物",
+        "meaning": "thing; object; article; stuff; substance",
+        "group": "Noun"
+    },
+    "kaimono": {
+        "hiragana": "かもの",
+        "kanji": "買い物",
+        "meaning": "shopping; purchased goods",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "nimotsu": {
+        "hiragana": "にもつ",
+        "kanji": "荷物",
+        "meaning": "luggage; baggage; package",
+        "group": "Noun"
+    },
+    "seibutsu": {
+        "hiragana": "せいぶつ",
+        "kanji": "生物",
+        "meaning": "living thing; organism; creature; life",
+        "group": "Noun"
+    },
+    "ushi": {
+        "hiragana": "うし",
+        "kanji": "牛",
+        "meaning": "cattle (Bos taurus); cow; bull; ox; calf",
+        "group": "Noun"
+    },
+    "gyuunyuu": {
+        "hiragana": "ぎゅうにゅう",
+        "kanji": "牛乳",
+        "meaning": "(cow's) milk",
+        "group": "Noun"
+    },
+    "uma": {
+        "hiragana": "うま",
+        "kanji": "馬",
+        "meaning": "horse",
+        "group": "Noun"
+    },
+    "bariki": {
+        "hiragana": "ばりき",
+        "kanji": "馬力",
+        "meaning": "horsepower; hp",
+        "group": "Noun"
+    },
+    "basha": {
+        "hiragana": "ばしゃ",
+        "kanji": "馬車",
+        "meaning": "coach (horse-drawn); carriage; wagon; cart",
+        "group": "Noun"
+    },
+    "tori": {
+        "hiragana": "とり",
+        "kanji": "鳥",
+        "meaning": "bird",
+        "group": "Noun"
+    },
+    "yakitori": {
+        "hiragana": "やとり",
+        "kanji": "焼き鳥",
+        "meaning": "yakitori; chicken pieces (or sometimes beef or pork offal) grilled on a skewer",
+        "group": "Noun"
+    },
+    "hakuchou": {
+        "hiragana": "はくちょう",
+        "kanji": "白鳥",
+        "meaning": "swan (Cygnus spp.)",
+        "group": "Noun"
+    },
+    "yachou": {
+        "hiragana": "やちょう",
+        "kanji": "野鳥",
+        "meaning": "wild bird",
+        "group": "Noun"
+    },
+    "sakana": {
+        "hiragana": "さかな",
+        "kanji": "魚",
+        "meaning": "fish",
+        "group": "Noun"
+    },
+    "yakizakana": {
+        "hiragana": "やざかな",
+        "kanji": "焼き魚",
+        "meaning": "grilled fish",
+        "group": "Noun"
+    },
+    "sakanaya": {
+        "hiragana": "さかなや",
+        "kanji": "魚屋",
+        "meaning": "fish market; fish dealer; fishmonger",
+        "group": "Noun"
+    },
+    "kingyo": {
+        "hiragana": "きんぎょ",
+        "kanji": "金魚",
+        "meaning": "goldfish (Carassius auratus)",
+        "group": "Noun"
+    },
+    "atarashii": {
+        "hiragana": "あたら",
+        "kanji": "新しい",
+        "meaning": "new; novel; fresh; recent; latest; up-to-date; modern",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "shinbun": {
+        "hiragana": "しんぶん",
+        "kanji": "新聞",
+        "meaning": "newspaper",
+        "group": "Noun"
+    },
+    "shinsha": {
+        "hiragana": "しんしゃ",
+        "kanji": "新車",
+        "meaning": "new car",
+        "group": "Noun"
+    },
+    "shinnen": {
+        "hiragana": "しんねん",
+        "kanji": "信念",
+        "meaning": "belief; faith; conviction",
+        "group": "Noun"
+    },
+    "furui": {
+        "hiragana": "ふる",
+        "kanji": "古い",
+        "meaning": "old; aged; ancient; antiquated; antique; timeworn",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "furuhon": {
+        "hiragana": "ふるほん",
+        "kanji": "古本",
+        "meaning": "secondhand book",
+        "group": "Noun"
+    },
+    "chuukosha": {
+        "hiragana": "ちゅうこしゃ",
+        "kanji": "中古車",
+        "meaning": "used car; secondhand car",
+        "group": "Noun"
+    },
+    "nagai": {
+        "hiragana": "なが",
+        "kanji": "長い",
+        "meaning": "long (distance, length)",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "chounan": {
+        "hiragana": "ちょうなん",
+        "kanji": "長男",
+        "meaning": "eldest son (may be the only son); first-born son",
+        "group": "Noun"
+    },
+    "gakuchou": {
+        "hiragana": "がくちょう",
+        "kanji": "学長",
+        "meaning": "(university) president; chancellor; principal; provost",
+        "group": "Noun"
+    },
+    "nagano": {
+        "hiragana": "なが",
+        "kanji": "長の",
+        "meaning": "long; eternal",
+        "group": "Pre-noun adjectival (rentaishi)"
+    },
+    "mijikai": {
+        "hiragana": "みじか",
+        "kanji": "短い",
+        "meaning": "short",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "tandai": {
+        "hiragana": "たんだい",
+        "kanji": "短大",
+        "meaning": "junior college; vocationally oriented post-secondary institution offering two or three-year programs",
+        "group": "Noun"
+    },
+    "tanjikan": {
+        "hiragana": "たんじかん",
+        "kanji": "短時間",
+        "meaning": "short time",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "takai": {
+        "hiragana": "たか",
+        "kanji": "高い",
+        "meaning": "high; tall",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "koukou": {
+        "hiragana": "こうこう",
+        "kanji": "高校",
+        "meaning": "senior high school; high school",
+        "group": "Noun"
+    },
+    "takahashi": {
+        "hiragana": "たかはしめいじんぼうけんじま",
+        "kanji": "高橋名人の冒険島",
+        "meaning": "Adventure Island (video game)",
+        "group": "Noun"
+    },
+    "kousoku": {
+        "hiragana": "こうそく",
+        "kanji": "高速",
+        "meaning": "high-speed; rapid; express",
+        "group": "Na-adjective (keiyodoshi), Noun which may take the genitive case particle 'no', Noun"
+    },
+    "yasui": {
+        "hiragana": "やす",
+        "kanji": "安い",
+        "meaning": "cheap; inexpensive",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "yasuuri": {
+        "hiragana": "やすう",
+        "kanji": "安売り",
+        "meaning": "bargain sale; selling cheaply; selling at a low price",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "anshin": {
+        "hiragana": "あんしん",
+        "kanji": "安心",
+        "meaning": "peace of mind; relief; (sense of) security; safety; assurance; confidence",
+        "group": "Noun, Na-adjective (keiyodoshi), Suru verb, Intransitive verb"
+    },
+    "anzenna": {
+        "hiragana": "あんぜん",
+        "kanji": "安全",
+        "meaning": "safety; security",
+        "group": "Noun, Na-adjective (keiyodoshi)"
+    },
+    "hikui": {
+        "hiragana": "ひく",
+        "kanji": "低い",
+        "meaning": "low (rank, degree, value, content, quality, etc.)",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "teika": {
+        "hiragana": "ていか",
+        "kanji": "低下",
+        "meaning": "fall; decline; lowering; deterioration; degradation",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "teion": {
+        "hiragana": "ていおん",
+        "kanji": "低温",
+        "meaning": "low temperature",
+        "group": "Noun, Noun which may take the genitive case particle 'no'"
+    },
+    "kurai": {
+        "hiragana": "くら",
+        "kanji": "暗い",
+        "meaning": "dark; gloomy; murky",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "anshitsu": {
+        "hiragana": "あんしつ",
+        "kanji": "暗室",
+        "meaning": "darkroom",
+        "group": "Noun"
+    },
+    "ooi": {
+        "hiragana": "おお",
+        "kanji": "多い",
+        "meaning": "many; numerous; a lot",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "tashou": {
+        "hiragana": "たしょう",
+        "kanji": "多少",
+        "meaning": "a little; some; somewhat; slightly; to some degree; to some extent",
+        "group": "Adverb (fukushi), Noun which may take the genitive case particle 'no'"
+    },
+    "tasuu": {
+        "hiragana": "たすう",
+        "kanji": "多数",
+        "meaning": "large number (of); many",
+        "group": "Noun, Noun which may take the genitive case particle 'no'"
+    },
+    "sukunai": {
+        "hiragana": "すく",
+        "kanji": "少ない",
+        "meaning": "few; little; small (amount); low; scarce; insufficient; seldom; rare",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "sukoshi": {
+        "hiragana": "すこ",
+        "kanji": "少し",
+        "meaning": "a little; a bit; a small amount; a few; some; slightly; somewhat",
+        "group": "Adverb (fukushi)"
+    },
+    "shounen": {
+        "hiragana": "しょうねん",
+        "kanji": "少年",
+        "meaning": "boy",
+        "group": "Noun"
+    },
+    "shoujo": {
+        "hiragana": "しょうじょ",
+        "kanji": "少女",
+        "meaning": "girl (usu. between 7 and 17); young lady",
+        "group": "Noun"
+    },
+    "iku": {
+        "hiragana": "い",
+        "kanji": "行く",
+        "meaning": "to go; to move (towards); to head (towards); to leave (for)",
+        "group": "Godan verb - Iku/Yuku special class, Intransitive verb"
+    },
+    "okonau": {
+        "hiragana": "おこな",
+        "kanji": "行う",
+        "meaning": "to perform; to do; to conduct oneself; to carry out",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "ryokou": {
+        "hiragana": "りょこう",
+        "kanji": "旅行",
+        "meaning": "travel; trip; journey; excursion; tour",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "gyou": {
+        "hiragana": "ぎょう",
+        "kanji": "行",
+        "meaning": "line (of text); row; verse",
+        "group": "Noun"
+    },
+    "kuru": {
+        "hiragana": "く",
+        "kanji": "来る",
+        "meaning": "to come (spatially or temporally); to approach; to arrive",
+        "group": "Kuru verb - special class, Intransitive verb"
+    },
+    "rainen": {
+        "hiragana": "らいねん",
+        "kanji": "来年",
+        "meaning": "next year",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "raigetsu": {
+        "hiragana": "らいげつ",
+        "kanji": "来月",
+        "meaning": "next month",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "rainichi": {
+        "hiragana": "らいにち",
+        "kanji": "来日",
+        "meaning": "coming to Japan; visit to Japan; arrival in Japan",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "kaeru": {
+        "hiragana": "かえ",
+        "kanji": "帰る",
+        "meaning": "to return; to come home; to go home; to go back",
+        "group": "Godan verb with 'ru' ending, Intransitive verb"
+    },
+    "kikoku": {
+        "hiragana": "きこく",
+        "kanji": "帰国",
+        "meaning": "return to one's country",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "taberu": {
+        "hiragana": "た",
+        "kanji": "食べる",
+        "meaning": "to eat",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "nomu": {
+        "hiragana": "の",
+        "kanji": "飲む",
+        "meaning": "to drink; to swallow; to take (medicine)",
+        "group": "Godan verb with 'mu' ending, Transitive verb"
+    },
+    "tabemono": {
+        "hiragana": "たもの",
+        "kanji": "食べ物",
+        "meaning": "food",
+        "group": "Noun"
+    },
+    "shokuji": {
+        "hiragana": "しょくじ",
+        "kanji": "食事",
+        "meaning": "meal (e.g. lunch, dinner)",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "yuushoku": {
+        "hiragana": "ゆうしょく",
+        "kanji": "夕食",
+        "meaning": "evening meal; dinner",
+        "group": "Noun"
+    },
+    "nomimono": {
+        "hiragana": "のもの",
+        "kanji": "飲み物",
+        "meaning": "drink; beverage",
+        "group": "Noun"
+    },
+    "inshu": {
+        "hiragana": "いんしゅ",
+        "kanji": "飲酒",
+        "meaning": "drinking alcohol",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "miru": {
+        "hiragana": "み",
+        "kanji": "見る",
+        "meaning": "to see; to look; to watch; to view; to observe",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "iken": {
+        "hiragana": "いけん",
+        "kanji": "意見",
+        "meaning": "opinion; view; comment",
+        "group": "Noun"
+    },
+    "miseru": {
+        "hiragana": "み",
+        "kanji": "見せる",
+        "meaning": "to show; to display",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "kenbutsu": {
+        "hiragana": "けんぶつ",
+        "kanji": "見物",
+        "meaning": "sightseeing; watching; viewing",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "kiku": {
+        "hiragana": "き",
+        "kanji": "聞く",
+        "meaning": "to hear",
+        "group": "Godan verb with 'ku' ending, Transitive verb"
+    },
+    "kikoeru": {
+        "hiragana": "き",
+        "kanji": "聞こえる",
+        "meaning": "to be heard; to be audible; to reach one's ears",
+        "group": "Ichidan verb, Intransitive verb"
+    },
+    "yomu": {
+        "hiragana": "よ",
+        "kanji": "読む",
+        "meaning": "to read",
+        "group": "Godan verb with 'mu' ending, Transitive verb"
+    },
+    "yomi": {
+        "hiragana": "よ",
+        "kanji": "読み",
+        "meaning": "reading",
+        "group": "Noun"
+    },
+    "dokusho": {
+        "hiragana": "どくしょ",
+        "kanji": "読書",
+        "meaning": "reading (books)",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "dokusha": {
+        "hiragana": "どくしゃ",
+        "kanji": "読者",
+        "meaning": "reader",
+        "group": "Noun"
+    },
+    "kaku": {
+        "hiragana": "か",
+        "kanji": "書く",
+        "meaning": "to write; to compose; to pen",
+        "group": "Godan verb with 'ku' ending, Transitive verb"
+    },
+    "shoten": {
+        "hiragana": "しょてん",
+        "kanji": "書店",
+        "meaning": "bookshop; bookstore",
+        "group": "Noun"
+    },
+    "kaiwa": {
+        "hiragana": "かいわ",
+        "kanji": "会話",
+        "meaning": "conversation; talk; chat",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "hanasu": {
+        "hiragana": "はな",
+        "kanji": "話す",
+        "meaning": "to talk; to speak; to converse; to chat",
+        "group": "Godan verb with 'su' ending, Transitive verb"
+    },
+    "denwa": {
+        "hiragana": "でんわ",
+        "kanji": "電話",
+        "meaning": "telephone call; phone call",
+        "group": "Noun, Suru verb, Transitive verb, Intransitive verb"
+    },
+    "kau": {
+        "hiragana": "か",
+        "kanji": "買う",
+        "meaning": "to buy; to purchase",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "oshieru": {
+        "hiragana": "おし",
+        "kanji": "教える",
+        "meaning": "to teach; to instruct",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "kyouiku": {
+        "hiragana": "きょういく",
+        "kanji": "教育",
+        "meaning": "education; schooling; training; instruction; teaching; upbringing",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "kyoukai": {
+        "hiragana": "きょうかい",
+        "kanji": "教会",
+        "meaning": "church; congregation",
+        "group": "Noun"
+    },
+    "kyoushitsu": {
+        "hiragana": "きょうしつ",
+        "kanji": "教室",
+        "meaning": "classroom; lecture room",
+        "group": "Noun"
+    },
+    "asa": {
+        "hiragana": "あさ",
+        "kanji": "朝",
+        "meaning": "morning",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "hiru": {
+        "hiragana": "ひる",
+        "kanji": "昼",
+        "meaning": "noon; midday",
+        "group": "Noun"
+    },
+    "asahi": {
+        "hiragana": "あさひ",
+        "kanji": "朝日",
+        "meaning": "morning sun",
+        "group": "Noun"
+    },
+    "choushoku": {
+        "hiragana": "ちょうしょく",
+        "kanji": "朝食",
+        "meaning": "breakfast",
+        "group": "Noun"
+    },
+    "hirune": {
+        "hiragana": "ひるね",
+        "kanji": "昼寝",
+        "meaning": "(afternoon) nap; sleeping during the day; siesta",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "chuushoku": {
+        "hiragana": "ちゅうしょく",
+        "kanji": "昼食",
+        "meaning": "lunch; midday meal",
+        "group": "Noun"
+    },
+    "hiruyasumi": {
+        "hiragana": "ひるやす",
+        "kanji": "昼休み",
+        "meaning": "lunch break; noon recess; noon rest period",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "yoru": {
+        "hiragana": "よる",
+        "kanji": "夜",
+        "meaning": "night; evening",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "yashoku": {
+        "hiragana": "やしょく",
+        "kanji": "夜食",
+        "meaning": "supper; night meal; late-night snack; \"fourth meal\"; midnight snack",
+        "group": "Noun"
+    },
+    "ban": {
+        "hiragana": "ばん",
+        "kanji": "晩",
+        "meaning": "evening; night",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "yuu": {
+        "hiragana": "ゆう",
+        "kanji": "有",
+        "meaning": "existence",
+        "group": "Noun"
+    },
+    "konban": {
+        "hiragana": "こんばん",
+        "kanji": "今晩",
+        "meaning": "tonight; this evening",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "bangohan": {
+        "hiragana": "ばんごはん",
+        "kanji": "晩御飯",
+        "meaning": "dinner; evening meal",
+        "group": "Noun"
+    },
+    "yuube": {
+        "hiragana": "ゆうべ",
+        "kanji": "昨夜",
+        "meaning": "last night; yesterday evening",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "tanabata": {
+        "hiragana": "たなばた",
+        "kanji": "七夕",
+        "meaning": "Star Festival (held in July or August); Tanabata; Festival of the Weaver",
+        "group": "Noun"
+    },
+    "kata": {
+        "hiragana": "かた",
+        "kanji": "肩",
+        "meaning": "shoulder",
+        "group": "Noun"
+    },
+    "samakata": {
+        "hiragana": "さまかた",
+        "kanji": "様方",
+        "meaning": "care of; c/o",
+        "group": "Suffix"
+    },
+    "yuugata": {
+        "hiragana": "ゆうがた",
+        "kanji": "夕方",
+        "meaning": "early evening (usu. from 3pm to 6pm); dusk",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "houhou": {
+        "hiragana": "ほうほう",
+        "kanji": "方法",
+        "meaning": "method; way; manner; process; procedure; means; measure",
+        "group": "Noun"
+    },
+    "gozen": {
+        "hiragana": "ごぜん",
+        "kanji": "午前",
+        "meaning": "morning; a.m.",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "gogo": {
+        "hiragana": "ごご",
+        "kanji": "午後",
+        "meaning": "afternoon; p.m.",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "shougo": {
+        "hiragana": "しょうご",
+        "kanji": "正午",
+        "meaning": "noon; midday",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "mae": {
+        "hiragana": "まえ",
+        "kanji": "前",
+        "meaning": "in front (of); before (e.g. a building)",
+        "group": "Noun"
+    },
+    "zenhan": {
+        "hiragana": "ぜんはん",
+        "kanji": "前半",
+        "meaning": "first half",
+        "group": "Noun"
+    },
+    "ato": {
+        "hiragana": "あと",
+        "kanji": "跡",
+        "meaning": "trace; tracks; mark; sign",
+        "group": "Noun"
+    },
+    "ushiro": {
+        "hiragana": "うし",
+        "kanji": "後ろ",
+        "meaning": "back; behind; rear",
+        "group": "Noun, Noun which may take the genitive case particle 'no'"
+    },
+    "nengo": {
+        "hiragana": "ねんご",
+        "kanji": "年後",
+        "meaning": "years later",
+        "group": "Expressions (phrases, clauses, etc.), Noun, Adverb (fukushi)"
+    },
+    "kouhan": {
+        "hiragana": "こうはん",
+        "kanji": "後半",
+        "meaning": "second half; latter half",
+        "group": "Noun"
+    },
+    "mainichi": {
+        "hiragana": "まいにち",
+        "kanji": "毎日",
+        "meaning": "every day; daily",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "maigetsu": {
+        "hiragana": "まいつき",
+        "kanji": "毎月",
+        "meaning": "every month; each month; monthly",
+        "group": "Adverb (fukushi), Noun"
+    },
+    "maishuu": {
+        "hiragana": "まいしゅう",
+        "kanji": "毎週",
+        "meaning": "every week",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "raishuu": {
+        "hiragana": "らいしゅう",
+        "kanji": "来週",
+        "meaning": "next week",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "shuumatsu": {
+        "hiragana": "しゅうまつ",
+        "kanji": "週末",
+        "meaning": "weekend",
+        "group": "Adverb (fukushi), Noun"
+    },
+    "senshuu": {
+        "hiragana": "せんしゅう",
+        "kanji": "先週",
+        "meaning": "last week; the week before",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "isshuukan": {
+        "hiragana": "いっしゅうかん",
+        "kanji": "一週間",
+        "meaning": "one week",
+        "group": "Noun"
+    },
+    "you": {
+        "hiragana": "よう",
+        "kanji": "様",
+        "meaning": "appearing ...; looking ...",
+        "group": "Noun, used as a suffix, Noun"
+    }
+}

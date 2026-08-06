@@ -2134,5 +2134,149 @@
         "kanji": "お大事に",
         "meaning": "take care of yourself; get well soon",
         "group": "Expressions (phrases, clauses, etc.)"
+    },
+    "dekimasu": {
+        "hiragana": "でき",
+        "kanji": "出来る",
+        "meaning": "to be able to do; to be possible; to be permitted (to do)",
+        "group": "Ichidan verb, Intransitive verb"
+    },
+    "araimasu": {
+        "hiragana": "あら",
+        "kanji": "洗う",
+        "meaning": "to wash; to cleanse; to rinse",
+        "group": "Godan verb with 'u' ending, Transitive verb"
+    },
+    "hikimasu": {
+        "hiragana": "ひ",
+        "kanji": "弾く",
+        "meaning": "to play (a stringed or keyboard instrument)",
+        "group": "Godan verb with 'ku' ending, Transitive verb"
+    },
+    "utaimasu": {
+        "hiragana": "うた",
+        "kanji": "歌う",
+        "meaning": "to sing",
+        "group": "Godan verb with 'u' ending, Transitive verb, Intransitive verb"
+    },
+    "atsumemasu": {
+        "hiragana": "あつ",
+        "kanji": "集める",
+        "meaning": "to collect; to assemble; to gather",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "sutemasu": {
+        "hiragana": "す",
+        "kanji": "捨てる",
+        "meaning": "to throw away; to cast away; to dump; to discard",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "kaemasu": {
+        "hiragana": "かえ",
+        "kanji": "帰る",
+        "meaning": "to return; to come home; to go home; to go back",
+        "group": "Godan verb with 'ru' ending, Intransitive verb"
+    },
+    "unten": {
+        "hiragana": "うんてん",
+        "kanji": "運転",
+        "meaning": "operation (of a machine); running; working",
+        "group": "Noun, Suru verb, Transitive verb, Intransitive verb"
+    },
+    "yoyaku": {
+        "hiragana": "よやく",
+        "kanji": "予約",
+        "meaning": "reservation; appointment; booking; advance order",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "kengaku": {
+        "hiragana": "けんがく",
+        "kanji": "見学",
+        "meaning": "inspection; study by observation; field trip; tour; review",
+        "group": "Noun, Suru verb, Transitive verb, Intransitive verb"
+    },
+    "kokusai": {
+        "hiragana": "こくさい",
+        "kanji": "国際",
+        "meaning": "international",
+        "group": "Noun which may take the genitive case particle 'no', Noun"
+    },
+    "genkin": {
+        "hiragana": "げんきん",
+        "kanji": "現金",
+        "meaning": "cash; ready money; money on hand; currency",
+        "group": "Noun"
+    },
+    "shumi": {
+        "hiragana": "しゅみ",
+        "kanji": "趣味",
+        "meaning": "hobby; pastime",
+        "group": "Noun"
+    },
+    "nitsuki": {
+        "hiragana": "つ",
+        "kanji": "に付き",
+        "meaning": "because of; on account of; due to",
+        "group": "Expressions (phrases, clauses, etc.)"
+    },
+    "oinori": {
+        "hiragana": "いの",
+        "kanji": "お祈り",
+        "meaning": "prayer; supplication",
+        "group": "Noun"
+    },
+    "kachou": {
+        "hiragana": "かちょう",
+        "kanji": "課長",
+        "meaning": "section manager; section chief",
+        "group": "Noun"
+    },
+    "buchou": {
+        "hiragana": "ぶちょう",
+        "kanji": "部長",
+        "meaning": "head (chief, director) of a section or department",
+        "group": "Noun"
+    },
+    "shachou": {
+        "hiragana": "しゃちょう",
+        "kanji": "社長",
+        "meaning": "company president; manager; director",
+        "group": "Noun"
+    },
+    "doubutsu": {
+        "hiragana": "どうぶつ",
+        "kanji": "動物",
+        "meaning": "animal",
+        "group": "Noun"
+    },
+    "uma": {
+        "hiragana": "うま",
+        "kanji": "馬",
+        "meaning": "horse",
+        "group": "Noun"
+    },
+    "hee": {
+        "hiragana": "",
+        "kanji": "へぇ",
+        "meaning": "oh, yes?; really?",
+        "group": "Other forms"
+    },
+    "nakanaka": {
+        "hiragana": "なかなか",
+        "kanji": "中々",
+        "meaning": "very; considerably; easily; readily; fairly; quite; highly; rather",
+        "group": "Adverb (fukushi), Na-adjective (keiyodoshi)"
+    },
+    "bokushou": {
+        "hiragana": "もくしょう",
+        "kanji": "木匠",
+        "meaning": "carpenter",
+        "group": "Noun"
+    },
+    "zebi": {
+        "hiragana": "",
+        "kanji": "ゼビウス",
+        "meaning": "Xevious",
+        "group": "Wikipedia definition"
     }
 }
