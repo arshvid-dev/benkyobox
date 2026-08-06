@@ -2278,5 +2278,287 @@
         "kanji": "ゼビウス",
         "meaning": "Xevious",
         "group": "Wikipedia definition"
+    },
+    "noborimasu": {
+        "hiragana": "のぼ",
+        "kanji": "上る",
+        "meaning": "to ascend; to go up; to climb",
+        "group": "Godan verb with 'ru' ending, Intransitive verb"
+    },
+    "tomarimasu": {
+        "hiragana": "と",
+        "kanji": "止まる",
+        "meaning": "to stop (moving); to come to a stop",
+        "group": "Godan verb with 'ru' ending, Intransitive verb"
+    },
+    "souji": {
+        "hiragana": "そうじ",
+        "kanji": "掃除",
+        "meaning": "cleaning; sweeping; dusting; scrubbing",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "sentaku": {
+        "hiragana": "せんたく",
+        "kanji": "洗濯",
+        "meaning": "washing; laundry",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "renshuu": {
+        "hiragana": "れんしゅう",
+        "kanji": "練習",
+        "meaning": "practice; training; drill; (an) exercise; workout",
+        "group": "Noun, Suru verb, Transitive verb"
+    },
+    "narimasu": {
+        "hiragana": "な",
+        "kanji": "成る",
+        "meaning": "to become; to get; to grow; to turn; to reach; to attain",
+        "group": "Godan verb with 'ru' ending, Intransitive verb"
+    },
+    "nemui": {
+        "hiragana": "ねむ",
+        "kanji": "眠い",
+        "meaning": "sleepy; drowsy; somnolent",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "tsuyoi": {
+        "hiragana": "つよ",
+        "kanji": "強い",
+        "meaning": "strong; potent; competent; domineering; tough",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "yowai": {
+        "hiragana": "よわ",
+        "kanji": "弱い",
+        "meaning": "weak; frail; delicate; tender; unskilled; weak (wine)",
+        "group": "I-adjective (keiyoushi)"
+    },
+    "choushigaii": {
+        "hiragana": "ちょうし",
+        "kanji": "調子がいい",
+        "meaning": "in good condition; in fine shape; in form; in good health; (feeling) well; in working order; going well; running smoothly",
+        "group": "Expressions (phrases, clauses, etc.), I-Adjective (keiyoushi) - yoi/ii class"
+    },
+    "choushigawarui": {
+        "hiragana": "ちょうしわる",
+        "kanji": "調子が悪い",
+        "meaning": "in bad shape; not doing well; not going well; out of condition; in poor form",
+        "group": "Expressions (phrases, clauses, etc.), I-adjective (keiyoushi)"
+    },
+    "choushi": {
+        "hiragana": "ちょうし",
+        "kanji": "調子",
+        "meaning": "tune; tone; key; pitch; time; rhythm",
+        "group": "Noun"
+    },
+    "sumou": {
+        "hiragana": "すもう",
+        "kanji": "相撲",
+        "meaning": "sumo (wrestling)",
+        "group": "Noun"
+    },
+    "ocha": {
+        "hiragana": "ちゃ",
+        "kanji": "お茶",
+        "meaning": "tea (esp. green or barley)",
+        "group": "Noun"
+    },
+    "ichido": {
+        "hiragana": "いちど",
+        "kanji": "一度",
+        "meaning": "once; one time; on one occasion",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "ichidomo": {
+        "hiragana": "いちど",
+        "kanji": "一度も",
+        "meaning": "(not) even once; (not) ever",
+        "group": "Expressions (phrases, clauses, etc.)"
+    },
+    "dandan": {
+        "hiragana": "だんだん",
+        "kanji": "段々",
+        "meaning": "gradually; by degrees; little by little; more and more; increasingly",
+        "group": "Adverb (fukushi), Adverb taking the 'to' particle"
+    },
+    "okagesamade": {
+        "hiragana": "かげさま",
+        "kanji": "お陰様で",
+        "meaning": "thankfully; fortunately; luckily; by God's grace; under the gods' shadow",
+        "group": "Expressions (phrases, clauses, etc.)"
+    },
+    "kanpai": {
+        "hiragana": "かんぱい",
+        "kanji": "乾杯",
+        "meaning": "cheers; bottoms-up; prosit",
+        "group": "Noun, Suru verb, Intransitive verb"
+    },
+    "jitsuha": {
+        "hiragana": "じつ",
+        "kanji": "実は",
+        "meaning": "as a matter of fact; by the way; to tell you the truth; to be honest; frankly; actually",
+        "group": "Expressions (phrases, clauses, etc.), Adverb (fukushi)"
+    },
+    "nankaimo": {
+        "hiragana": "なんかい",
+        "kanji": "何回も",
+        "meaning": "time and time again; many times; a number of times",
+        "group": "Adverb (fukushi), Noun which may take the genitive case particle 'no'"
+    },
+    "jikashi": {
+        "hiragana": "じかしゅぎ",
+        "kanji": "時価主義",
+        "meaning": "market price basis; market price principle",
+        "group": "Noun"
+    },
+    "muri": {
+        "hiragana": "むり",
+        "kanji": "無理",
+        "meaning": "unreasonable; unnatural; unjustifiable",
+        "group": "Na-adjective (keiyodoshi), Noun"
+    },
+    "karadaniii": {
+        "hiragana": "からだ",
+        "kanji": "体にいい",
+        "meaning": "good for the body; good for the health",
+        "group": "Expressions (phrases, clauses, etc.), I-Adjective (keiyoushi) - yoi/ii class"
+    },
+    "irimasu": {
+        "hiragana": "い",
+        "kanji": "居る",
+        "meaning": "to be (of animate objects); to exist",
+        "group": "Ichidan verb, Intransitive verb"
+    },
+    "shirabemasu": {
+        "hiragana": "しら",
+        "kanji": "調べる",
+        "meaning": "to examine; to look up; to investigate; to check up; to sense; to study; to inquire; to search",
+        "group": "Ichidan verb, Transitive verb"
+    },
+    "nao": {
+        "hiragana": "なお",
+        "kanji": "尚",
+        "meaning": "still; yet",
+        "group": "Adverb (fukushi)"
+    },
+    "shuurishimasu": {
+        "hiragana": "しゅうりけんり",
+        "kanji": "修理する権利",
+        "meaning": "right to repair",
+        "group": "Noun"
+    },
+    "denwa": {
+        "hiragana": "でんわ",
+        "kanji": "電話",
+        "meaning": "telephone call; phone call",
+        "group": "Noun, Suru verb, Transitive verb, Intransitive verb"
+    },
+    "boku": {
+        "hiragana": "ぼく",
+        "kanji": "僕",
+        "meaning": "I; me",
+        "group": "Pronoun"
+    },
+    "kimi": {
+        "hiragana": "きみ",
+        "kanji": "君",
+        "meaning": "you; buddy; pal",
+        "group": "Pronoun"
+    },
+    "un": {
+        "hiragana": "うん",
+        "kanji": "運",
+        "meaning": "fortune; luck; chance",
+        "group": "Noun"
+    },
+    "uun": {
+        "hiragana": "",
+        "kanji": "ううん",
+        "meaning": "um; er; well",
+        "group": "Other forms"
+    },
+    "kotoba": {
+        "hiragana": "ことば",
+        "kanji": "言葉",
+        "meaning": "language; dialect",
+        "group": "Noun"
+    },
+    "butsuka": {
+        "hiragana": "ぶっか",
+        "kanji": "仏花",
+        "meaning": "flowers or flower arrangements for a butsudan (household Buddhist altar)",
+        "group": "Noun"
+    },
+    "kimono": {
+        "hiragana": "きもの",
+        "kanji": "着物",
+        "meaning": "kimono; Japanese traditional clothing (esp. full-length)",
+        "group": "Noun"
+    },
+    "hajime": {
+        "hiragana": "はじ",
+        "kanji": "始め",
+        "meaning": "beginning; start; outset; opening",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "owari": {
+        "hiragana": "お",
+        "kanji": "終わり",
+        "meaning": "end; ending; close; conclusion",
+        "group": "Noun"
+    },
+    "kocchi": {
+        "hiragana": "こちら",
+        "kanji": "此方",
+        "meaning": "this way; this direction",
+        "group": "Pronoun"
+    },
+    "socchi": {
+        "hiragana": "そちら",
+        "kanji": "其方",
+        "meaning": "that way; that direction",
+        "group": "Pronoun"
+    },
+    "acchi": {
+        "hiragana": "あちら",
+        "kanji": "彼方",
+        "meaning": "that way; that direction; over there; yonder",
+        "group": "Pronoun"
+    },
+    "docchi": {
+        "hiragana": "どちら",
+        "kanji": "何方",
+        "meaning": "which way; which direction; where",
+        "group": "Pronoun"
+    },
+    "konoaida": {
+        "hiragana": "あいだ",
+        "kanji": "この間",
+        "meaning": "the other day; lately; recently; during this period",
+        "group": "Noun, Adverb (fukushi)"
+    },
+    "minnade": {
+        "hiragana": "",
+        "kanji": "みんなで投票チャンネル",
+        "meaning": "Everybody Votes Channel",
+        "group": "Wikipedia definition"
+    },
+    "dousuruno": {
+        "hiragana": "ことでき",
+        "kanji": "どうする事も出来ない",
+        "meaning": "beyond one's control; nothing one can do",
+        "group": "Expressions (phrases, clauses, etc.), I-adjective (keiyoushi)"
+    },
+    "yokattara": {
+        "hiragana": "よ",
+        "kanji": "良かったら",
+        "meaning": "if you like",
+        "group": "Expressions (phrases, clauses, etc.)"
+    },
+    "iruiru": {
+        "hiragana": "い",
+        "kanji": "居る",
+        "meaning": "to be (of animate objects); to exist",
+        "group": "Ichidan verb, Intransitive verb"
     }
 }
